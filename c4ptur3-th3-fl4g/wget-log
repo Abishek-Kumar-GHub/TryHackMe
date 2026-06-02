@@ -1,0 +1,6 @@
+--2026-04-20 20:33:01--  https://tryhackme-vm-upload.s3.eu-west-1.amazonaws.com/stegosteg_1559008553457.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256
+Resolving tryhackme-vm-upload.s3.eu-west-1.amazonaws.com (tryhackme-vm-upload.s3.eu-west-1.amazonaws.com)... 64:ff9b::305:4871, 64:ff9b::345c:24fa, 64:ff9b::305:43e3, ...
+Connecting to tryhackme-vm-upload.s3.eu-west-1.amazonaws.com (tryhackme-vm-upload.s3.eu-west-1.amazonaws.com)|64:ff9b::305:4871|:443... connected.
+HTTP request sent, awaiting response... 400 Bad Request
+2026-04-20 20:33:02 ERROR 400: Bad Request.
+

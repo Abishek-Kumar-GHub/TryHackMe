@@ -1,0 +1,16 @@
+--2026-05-05 20:14:33--  http://cdn.loveletters.thm/heartbeat.exe
+Resolving cdn.loveletters.thm (cdn.loveletters.thm)... 10.48.168.8
+Connecting to cdn.loveletters.thm (cdn.loveletters.thm)|10.48.168.8|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 261442 (255K) [application/x-msdos-program]
+Saving to: ‘heartbeat.exe.1’
+
+     0K .......... .......... .......... .......... .......... 19%  610K 0s
+    50K .......... .......... .......... .......... .......... 39% 2.19M 0s
+   100K .......... .......... .......... .......... .......... 58% 5.68M 0s
+   150K .......... .......... .......... .......... .......... 78% 2.87M 0s
+   200K .......... .......... .......... .......... .......... 97% 6.31M 0s
+   250K .....                                                 100% 17.9M=0.1s
+
+2026-05-05 20:14:34 (1.81 MB/s) - ‘heartbeat.exe.1’ saved [261442/261442]
+

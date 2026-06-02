@@ -1,0 +1,8 @@
+# Dirsearch started Mon Mar 23 19:26:39 2026 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://www.smol.thm/ -w /usr/share/seclists/Discovery/Web-Content/common.txt
+
+301     0B   http://www.smol.thm/index.php    -> REDIRECTS TO: http://www.smol.thm/
+403   277B   http://www.smol.thm/server-status
+301   315B   http://www.smol.thm/wp-admin    -> REDIRECTS TO: http://www.smol.thm/wp-admin/
+301   317B   http://www.smol.thm/wp-content    -> REDIRECTS TO: http://www.smol.thm/wp-content/
+301   318B   http://www.smol.thm/wp-includes    -> REDIRECTS TO: http://www.smol.thm/wp-includes/
+405    42B   http://www.smol.thm/xmlrpc.php

@@ -1,0 +1,13 @@
+# Dirsearch started Mon Apr 27 14:44:19 2026 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.49.161.99 -w /usr/share/seclists/Discovery/Web-Content/common.txt
+
+301   157B   http://10.49.161.99/aspnet_client    -> REDIRECTS TO: http://10.49.161.99/aspnet_client/
+404     2KB  http://10.49.161.99/aux
+404     2KB  http://10.49.161.99/com1
+404     2KB  http://10.49.161.99/com2
+404     2KB  http://10.49.161.99/com3
+404     2KB  http://10.49.161.99/com4
+404     2KB  http://10.49.161.99/con
+404     2KB  http://10.49.161.99/lpt1
+404     2KB  http://10.49.161.99/lpt2
+404     2KB  http://10.49.161.99/nul
+404     2KB  http://10.49.161.99/prn

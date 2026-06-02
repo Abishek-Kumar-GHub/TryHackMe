@@ -1,0 +1,5 @@
+# Dirsearch started Thu Mar 26 19:32:02 2026 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.48.175.72 -w /usr/share/seclists/Discovery/Web-Content/common.txt
+
+301   313B   http://10.48.175.72/assets    -> REDIRECTS TO: http://10.48.175.72/assets/
+200    17B   http://10.48.175.72/robots.txt
+403   277B   http://10.48.175.72/server-status

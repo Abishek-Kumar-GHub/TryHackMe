@@ -1,0 +1,5 @@
+# Dirsearch started Sun Mar 29 19:39:43 2026 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.48.159.152 -w /usr/share/seclists/Discovery/Web-Content/common.txt
+
+301   319B   http://10.48.159.152/javascript    -> REDIRECTS TO: http://10.48.159.152/javascript/
+403   278B   http://10.48.159.152/phpmyadmin
+403   278B   http://10.48.159.152/server-status
