@@ -1,0 +1,32 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-06-02 15:19 +0530
+Nmap scan report for 10.49.166.113
+Host is up (0.027s latency).
+Not shown: 65532 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 f0:65:b8:42:b7:c3:ba:8e:fe:e4:3c:cd:57:f1:29:2e (RSA)
+|   256 42:1e:1b:8f:19:38:99:2e:36:70:cf:0e:b6:31:92:14 (ECDSA)
+|_  256 8e:89:43:de:5d:9b:99:66:c4:2a:93:17:f3:0e:e1:f4 (ED25519)
+80/tcp   open  http    Apache httpd 2.4.18 ((Ubuntu))
+|_http-title: Tryhackme &#8211; Just another WordPress site
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-generator: WordPress 5.6.2
+3306/tcp open  mysql   MySQL 5.7.33-0ubuntu0.16.04.1
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=MySQL_Server_5.7.33_Auto_Generated_Server_Certificate
+| Not valid before: 2021-05-26T21:23:31
+|_Not valid after:  2031-05-24T21:23:31
+| mysql-info: 
+|   Protocol: 10
+|   Version: 5.7.33-0ubuntu0.16.04.1
+|   Thread ID: 31
+|   Capabilities flags: 65535
+|   Some Capabilities: DontAllowDatabaseTableColumn, Support41Auth, FoundRows, SwitchToSSLAfterHandshake, ConnectWithDatabase, SupportsCompression, Speaks41ProtocolOld, LongPassword, SupportsTransactions, SupportsLoadDataLocal, IgnoreSigpipes, Speaks41ProtocolNew, InteractiveClient, LongColumnFlag, IgnoreSpaceBeforeParenthesis, ODBCClient, SupportsMultipleStatments, SupportsAuthPlugins, SupportsMultipleResults
+|   Status: Autocommit
+|   Salt: "2bv"W\x1EKk\x1F&|-F\x1Be	%{Y
+|_  Auth Plugin Name: mysql_native_password
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 32.03 seconds

