@@ -1,0 +1,9 @@
+┌──(sonar㉿Kali)-[~/…/Files/AI_in_cyb/tryhackme/Flip]
+└─$ nc 10.49.183.199 1337
+Welcome! Please login as the admin!
+username: bdmin
+bdmin's password: sUp3rPaSs1
+Leaked ciphertext: ad154e5c8fa927a7ee1bf5d784721071ba31f2201a77662d87d978cb58dc2e37689fa83b46ee8780ebd7ebfedb0f706c
+enter ciphertext: ae154e5c8fa927a7ee1bf5d784721071ba31f2201a77662d87d978cb58dc2e37689fa83b46ee8780ebd7ebfedb0f706c
+No way! You got it!
+A nice flag for you: THM{FliP_DaT_B1t_oR_G3t_Fl1pP3d}     

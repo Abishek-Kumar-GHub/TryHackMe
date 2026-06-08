@@ -1,0 +1,85 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-06-08 21:31 +0530
+Nmap scan report for 10.49.183.199
+Host is up (0.022s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 bf:19:d1:92:53:56:10:1b:dc:38:34:0d:75:77:e8:a8 (ECDSA)
+|_  256 41:1d:43:fe:15:ea:23:f0:b0:1e:48:d5:b2:42:80:9b (ED25519)
+1337/tcp open  waste?
+| fingerprint-strings: 
+|   DNSStatusRequestTCP: 
+|     Welcome! Please login as the admin!
+|     username: 
+|     password:
+|   DNSVersionBindReqTCP: 
+|     Welcome! Please login as the admin!
+|     username: 
+|     version
+|     bind
+|     password:
+|   FourOhFourRequest: 
+|     Welcome! Please login as the admin!
+|     username: GET /nice%20ports%2C/Tri%6Eity.txt%2ebak HTTP/1.0's password:
+|   GenericLines: 
+|     Welcome! Please login as the admin!
+|     username: 's password:
+|   GetRequest: 
+|     Welcome! Please login as the admin!
+|     username: GET / HTTP/1.0's password:
+|   HTTPOptions: 
+|     Welcome! Please login as the admin!
+|     username: OPTIONS / HTTP/1.0's password:
+|   Help: 
+|     Welcome! Please login as the admin!
+|     username: HELP's password:
+|   Kerberos, LDAPSearchReq, NULL, RPCCheck, SMBProgNeg, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+|     Welcome! Please login as the admin!
+|     username:
+|   LPDString: 
+|     Welcome! Please login as the admin!
+|     username: 
+|     default's password:
+|   RTSPRequest: 
+|     Welcome! Please login as the admin!
+|     username: OPTIONS / RTSP/1.0's password:
+|   X11Probe: 
+|     Welcome! Please login as the admin!
+|     username: l
+|_    password:
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port1337-TCP:V=7.99%I=7%D=6/8%Time=6A26E76E%P=x86_64-pc-linux-gnu%r(NUL
+SF:L,2E,"Welcome!\x20Please\x20login\x20as\x20the\x20admin!\nusername:\x20
+SF:")%r(GenericLines,3B,"Welcome!\x20Please\x20login\x20as\x20the\x20admin
+SF:!\nusername:\x20's\x20password:\x20")%r(GetRequest,49,"Welcome!\x20Plea
+SF:se\x20login\x20as\x20the\x20admin!\nusername:\x20GET\x20/\x20HTTP/1\.0'
+SF:s\x20password:\x20")%r(HTTPOptions,4D,"Welcome!\x20Please\x20login\x20a
+SF:s\x20the\x20admin!\nusername:\x20OPTIONS\x20/\x20HTTP/1\.0's\x20passwor
+SF:d:\x20")%r(RTSPRequest,4D,"Welcome!\x20Please\x20login\x20as\x20the\x20
+SF:admin!\nusername:\x20OPTIONS\x20/\x20RTSP/1\.0's\x20password:\x20")%r(R
+SF:PCCheck,2E,"Welcome!\x20Please\x20login\x20as\x20the\x20admin!\nusernam
+SF:e:\x20")%r(DNSVersionBindReqTCP,5B,"Welcome!\x20Please\x20login\x20as\x
+SF:20the\x20admin!\nusername:\x20\0\x1e\0\x06\x01\0\0\x01\0\0\0\0\0\0\x07v
+SF:ersion\x04bind\0\0\x10\0\x03's\x20password:\x20")%r(DNSStatusRequestTCP
+SF:,49,"Welcome!\x20Please\x20login\x20as\x20the\x20admin!\nusername:\x20\
+SF:0\x0c\0\0\x10\0\0\0\0\0\0\0\0\0's\x20password:\x20")%r(Help,3F,"Welcome
+SF:!\x20Please\x20login\x20as\x20the\x20admin!\nusername:\x20HELP's\x20pas
+SF:sword:\x20")%r(SSLSessionReq,2E,"Welcome!\x20Please\x20login\x20as\x20t
+SF:he\x20admin!\nusername:\x20")%r(TerminalServerCookie,2E,"Welcome!\x20Pl
+SF:ease\x20login\x20as\x20the\x20admin!\nusername:\x20")%r(TLSSessionReq,2
+SF:E,"Welcome!\x20Please\x20login\x20as\x20the\x20admin!\nusername:\x20")%
+SF:r(Kerberos,2E,"Welcome!\x20Please\x20login\x20as\x20the\x20admin!\nuser
+SF:name:\x20")%r(SMBProgNeg,2E,"Welcome!\x20Please\x20login\x20as\x20the\x
+SF:20admin!\nusername:\x20")%r(X11Probe,47,"Welcome!\x20Please\x20login\x2
+SF:0as\x20the\x20admin!\nusername:\x20l\0\x0b\0\0\0\0\0\0\0\0\0's\x20passw
+SF:ord:\x20")%r(FourOhFourRequest,6C,"Welcome!\x20Please\x20login\x20as\x2
+SF:0the\x20admin!\nusername:\x20GET\x20/nice%20ports%2C/Tri%6Eity\.txt%2eb
+SF:ak\x20HTTP/1\.0's\x20password:\x20")%r(LPDString,43,"Welcome!\x20Please
+SF:\x20login\x20as\x20the\x20admin!\nusername:\x20\x01default's\x20passwor
+SF:d:\x20")%r(LDAPSearchReq,2E,"Welcome!\x20Please\x20login\x20as\x20the\x
+SF:20admin!\nusername:\x20");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 129.78 seconds
