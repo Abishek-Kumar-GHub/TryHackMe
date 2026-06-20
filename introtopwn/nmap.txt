@@ -1,0 +1,24 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-06-20 17:03 +0530
+Nmap scan report for 10.49.186.43
+Host is up (0.024s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 01:8d:0b:db:db:eb:fa:4b:19:82:f0:13:c8:57:f5:53 (RSA)
+|   256 32:93:fb:c6:2c:39:13:d5:0b:86:34:bd:9c:63:5e:e1 (ECDSA)
+|_  256 5f:d5:d4:e7:11:b9:55:ed:fe:f7:7e:39:2e:1e:e2:5b (ED25519)
+1337/tcp open  waste?
+| fingerprint-strings: 
+|   GenericLines: 
+|     Give me deadbeef: Give me deadbeef:
+|   NULL: 
+|_    Give me deadbeef:
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port1337-TCP:V=7.99%I=7%D=6/20%Time=6A367A90%P=x86_64-pc-linux-gnu%r(NU
+SF:LL,12,"Give\x20me\x20deadbeef:\x20")%r(GenericLines,24,"Give\x20me\x20d
+SF:eadbeef:\x20Give\x20me\x20deadbeef:\x20");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 30.25 seconds

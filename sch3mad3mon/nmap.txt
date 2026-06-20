@@ -1,0 +1,30 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-06-14 21:02 +0530
+Nmap scan report for 10.49.182.55
+Host is up (2.1s latency).
+Not shown: 65532 closed tcp ports (reset)
+PORT     STATE SERVICE  VERSION
+22/tcp   open  ssh?
+|_ssh-hostkey: ERROR: Script execution failed (use -d to debug)
+3306/tcp open  mysql?
+| mysql-info: 
+|   Protocol: 10
+|   Version: 8.0.36
+|   Thread ID: 9
+|   Capabilities flags: 65535
+|   Some Capabilities: SwitchToSSLAfterHandshake, ConnectWithDatabase, SupportsTransactions, Speaks41ProtocolOld, InteractiveClient, DontAllowDatabaseTableColumn, ODBCClient, IgnoreSigpipes, SupportsCompression, Support41Auth, SupportsLoadDataLocal, LongPassword, IgnoreSpaceBeforeParenthesis, Speaks41ProtocolNew, FoundRows, LongColumnFlag, SupportsMultipleStatments, SupportsMultipleResults, SupportsAuthPlugins
+|   Status: Autocommit
+|   Salt: &.\x01\x0B\x12\x10i 8xA!\x04!\x10\x1F?2]|
+|_  Auth Plugin Name: mysql_native_password
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=MySQL_Server_8.0.36_Auto_Generated_Server_Certificate
+| Not valid before: 2024-04-04T09:23:35
+|_Not valid after:  2034-04-02T09:23:35
+8000/tcp open  http-alt Apache/2.4.52 (Debian)
+|_http-server-header: Apache/2.4.52 (Debian)
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 278.03 seconds

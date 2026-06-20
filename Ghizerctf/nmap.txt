@@ -1,0 +1,72 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-06-17 17:29 +0530
+Nmap scan report for 10.48.182.146
+Host is up (0.036s latency).
+Not shown: 65529 closed tcp ports (reset)
+PORT      STATE SERVICE    VERSION
+21/tcp    open  ftp?
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, FourOhFourRequest, GenericLines, GetRequest, HTTPOptions, Help, RTSPRequest, X11Probe: 
+|     220 Welcome to Anonymous FTP server (vsFTPd 3.0.3)
+|     Please login with USER and PASS.
+|   Kerberos, NULL, RPCCheck, SMBProgNeg, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+|_    220 Welcome to Anonymous FTP server (vsFTPd 3.0.3)
+80/tcp    open  http       Apache httpd 2.4.18 ((Ubuntu))
+|_http-title:         LimeSurvey    
+|_http-generator: LimeSurvey http://www.limesurvey.org
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+443/tcp   open  ssl/http   Apache httpd 2.4.18 ((Ubuntu))
+| ssl-cert: Subject: commonName=ubuntu
+| Not valid before: 2020-07-23T17:27:31
+|_Not valid after:  2030-07-21T17:27:31
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|_  http/1.1
+|_http-title: Ghizer &#8211; Just another WordPress site
+|_http-generator: WordPress 5.4.2
+18002/tcp open  java-rmi   Java RMI
+| rmi-dumpregistry: 
+|   jmxrmi
+|     javax.management.remote.rmi.RMIServerImpl_Stub
+|     @127.0.1.1:36247
+|     extends
+|       java.rmi.server.RemoteStub
+|       extends
+|_        java.rmi.server.RemoteObject
+36247/tcp open  java-rmi   Java RMI
+40951/tcp open  tcpwrapped
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port21-TCP:V=7.99%I=7%D=6/17%Time=6A328C2F%P=x86_64-pc-linux-gnu%r(NULL
+SF:,33,"220\x20Welcome\x20to\x20Anonymous\x20FTP\x20server\x20\(vsFTPd\x20
+SF:3\.0\.3\)\n")%r(GenericLines,58,"220\x20Welcome\x20to\x20Anonymous\x20F
+SF:TP\x20server\x20\(vsFTPd\x203\.0\.3\)\n530\x20Please\x20login\x20with\x
+SF:20USER\x20and\x20PASS\.\n")%r(Help,58,"220\x20Welcome\x20to\x20Anonymou
+SF:s\x20FTP\x20server\x20\(vsFTPd\x203\.0\.3\)\n530\x20Please\x20login\x20
+SF:with\x20USER\x20and\x20PASS\.\n")%r(GetRequest,58,"220\x20Welcome\x20to
+SF:\x20Anonymous\x20FTP\x20server\x20\(vsFTPd\x203\.0\.3\)\n530\x20Please\
+SF:x20login\x20with\x20USER\x20and\x20PASS\.\n")%r(HTTPOptions,58,"220\x20
+SF:Welcome\x20to\x20Anonymous\x20FTP\x20server\x20\(vsFTPd\x203\.0\.3\)\n5
+SF:30\x20Please\x20login\x20with\x20USER\x20and\x20PASS\.\n")%r(RTSPReques
+SF:t,58,"220\x20Welcome\x20to\x20Anonymous\x20FTP\x20server\x20\(vsFTPd\x2
+SF:03\.0\.3\)\n530\x20Please\x20login\x20with\x20USER\x20and\x20PASS\.\n")
+SF:%r(RPCCheck,33,"220\x20Welcome\x20to\x20Anonymous\x20FTP\x20server\x20\
+SF:(vsFTPd\x203\.0\.3\)\n")%r(DNSVersionBindReqTCP,58,"220\x20Welcome\x20t
+SF:o\x20Anonymous\x20FTP\x20server\x20\(vsFTPd\x203\.0\.3\)\n530\x20Please
+SF:\x20login\x20with\x20USER\x20and\x20PASS\.\n")%r(DNSStatusRequestTCP,58
+SF:,"220\x20Welcome\x20to\x20Anonymous\x20FTP\x20server\x20\(vsFTPd\x203\.
+SF:0\.3\)\n530\x20Please\x20login\x20with\x20USER\x20and\x20PASS\.\n")%r(S
+SF:SLSessionReq,33,"220\x20Welcome\x20to\x20Anonymous\x20FTP\x20server\x20
+SF:\(vsFTPd\x203\.0\.3\)\n")%r(TerminalServerCookie,33,"220\x20Welcome\x20
+SF:to\x20Anonymous\x20FTP\x20server\x20\(vsFTPd\x203\.0\.3\)\n")%r(TLSSess
+SF:ionReq,33,"220\x20Welcome\x20to\x20Anonymous\x20FTP\x20server\x20\(vsFT
+SF:Pd\x203\.0\.3\)\n")%r(Kerberos,33,"220\x20Welcome\x20to\x20Anonymous\x2
+SF:0FTP\x20server\x20\(vsFTPd\x203\.0\.3\)\n")%r(SMBProgNeg,33,"220\x20Wel
+SF:come\x20to\x20Anonymous\x20FTP\x20server\x20\(vsFTPd\x203\.0\.3\)\n")%r
+SF:(X11Probe,58,"220\x20Welcome\x20to\x20Anonymous\x20FTP\x20server\x20\(v
+SF:sFTPd\x203\.0\.3\)\n530\x20Please\x20login\x20with\x20USER\x20and\x20PA
+SF:SS\.\n")%r(FourOhFourRequest,58,"220\x20Welcome\x20to\x20Anonymous\x20F
+SF:TP\x20server\x20\(vsFTPd\x203\.0\.3\)\n530\x20Please\x20login\x20with\x
+SF:20USER\x20and\x20PASS\.\n");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 174.85 seconds
