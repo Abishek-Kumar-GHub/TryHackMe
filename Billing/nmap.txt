@@ -1,0 +1,21 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-07-02 11:33 +0530
+Nmap scan report for 10.48.176.142
+Host is up (0.042s latency).
+Not shown: 65531 closed tcp ports (reset)
+PORT     STATE SERVICE  VERSION
+22/tcp   open  ssh      OpenSSH 9.2p1 Debian 2+deb12u6 (protocol 2.0)
+| ssh-hostkey: 
+|   256 0b:60:d8:9d:ee:67:b6:8a:11:4f:7b:c2:33:4b:aa:58 (ECDSA)
+|_  256 f7:3c:e3:09:43:b4:91:69:05:91:8d:22:15:f1:9b:f5 (ED25519)
+80/tcp   open  http     Apache httpd 2.4.62 ((Debian))
+|_http-server-header: Apache/2.4.62 (Debian)
+| http-robots.txt: 1 disallowed entry 
+|_/mbilling/
+| http-title:             MagnusBilling        
+|_Requested resource was http://10.48.176.142/mbilling/
+3306/tcp open  mysql    MariaDB 10.3.23 or earlier (unauthorized)
+5038/tcp open  asterisk Asterisk Call Manager 2.10.6
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 33.03 seconds

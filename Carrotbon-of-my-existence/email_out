@@ -1,0 +1,256 @@
+=== Trying hopaitech.thm:25...
+=== Connected to hopaitech.thm.
+<-  220 hopaitech.thm ESMTP HopAI Mail Server Ready
+ -> EHLO Kali
+<-  250-hopaitech.thm
+<-  250-SIZE 33554432
+<-  250-8BITMIME
+<-  250 HELP
+ -> MAIL FROM:<abi.thm>
+<-  250 OK
+ -> RCPT TO:<shadow.whiskers@hopaitech.thm>
+<-  250 OK
+ -> DATA
+<-  354 End data with <CR><LF>.<CR><LF>
+ -> Date: Thu, 02 Jul 2026 14:32:19 +0530
+ -> To: shadow.whiskers@hopaitech.thm
+ -> From: abi.thm
+ -> Subject: Password Reset Request
+ -> Message-Id: <20260702143219.388497@Kali>
+ -> X-Mailer: swaks v20240103.0 jetmore.org/john/code/swaks/
+ -> 
+ -> Hello,
+ -> 
+ -> I have forgotten my password and would like to reset it.
+ -> 
+ -> Thanks.
+ -> 
+ -> .
+<-  250 Message accepted for delivery
+ -> QUIT
+<-  221 Bye
+=== Connection closed with remote host.
+=== Trying hopaitech.thm:25...
+=== Connected to hopaitech.thm.
+<-  220 hopaitech.thm ESMTP HopAI Mail Server Ready
+ -> EHLO Kali
+<-  250-hopaitech.thm
+<-  250-SIZE 33554432
+<-  250-8BITMIME
+<-  250 HELP
+ -> MAIL FROM:<abi.thm>
+<-  250 OK
+ -> RCPT TO:<obsidian.fluff@hopaitech.thm>
+<-  250 OK
+ -> DATA
+<-  354 End data with <CR><LF>.<CR><LF>
+ -> Date: Thu, 02 Jul 2026 14:32:30 +0530
+ -> To: obsidian.fluff@hopaitech.thm
+ -> From: abi.thm
+ -> Subject: Password Reset Request
+ -> Message-Id: <20260702143230.388738@Kali>
+ -> X-Mailer: swaks v20240103.0 jetmore.org/john/code/swaks/
+ -> 
+ -> Hello,
+ -> 
+ -> I have forgotten my password and would like to reset it.
+ -> 
+ -> Thanks.
+ -> 
+ -> .
+<-  250 Message accepted for delivery
+ -> QUIT
+<-  221 Bye
+=== Connection closed with remote host.
+=== Trying hopaitech.thm:25...
+=== Connected to hopaitech.thm.
+<-  220 hopaitech.thm ESMTP HopAI Mail Server Ready
+ -> EHLO Kali
+<-  250-hopaitech.thm
+<-  250-SIZE 33554432
+<-  250-8BITMIME
+<-  250 HELP
+ -> MAIL FROM:<abi.thm>
+<-  250 OK
+ -> RCPT TO:<nyx.nibbles@hopaitech.thm>
+<-  250 OK
+ -> DATA
+<-  354 End data with <CR><LF>.<CR><LF>
+ -> Date: Thu, 02 Jul 2026 14:32:30 +0530
+ -> To: nyx.nibbles@hopaitech.thm
+ -> From: abi.thm
+ -> Subject: Password Reset Request
+ -> Message-Id: <20260702143230.388739@Kali>
+ -> X-Mailer: swaks v20240103.0 jetmore.org/john/code/swaks/
+ -> 
+ -> Hello,
+ -> 
+ -> I have forgotten my password and would like to reset it.
+ -> 
+ -> Thanks.
+ -> 
+ -> .
+<-  250 Message accepted for delivery
+ -> QUIT
+<-  221 Bye
+=== Connection closed with remote host.
+=== Trying hopaitech.thm:25...
+=== Connected to hopaitech.thm.
+<-  220 hopaitech.thm ESMTP HopAI Mail Server Ready
+ -> EHLO Kali
+<-  250-hopaitech.thm
+<-  250-SIZE 33554432
+<-  250-8BITMIME
+<-  250 HELP
+ -> MAIL FROM:<abi.thm>
+<-  250 OK
+ -> RCPT TO:<midnight.hop@hopaitech.thm>
+<-  250 OK
+ -> DATA
+<-  354 End data with <CR><LF>.<CR><LF>
+ -> Date: Thu, 02 Jul 2026 14:32:31 +0530
+ -> To: midnight.hop@hopaitech.thm
+ -> From: abi.thm
+ -> Subject: Password Reset Request
+ -> Message-Id: <20260702143231.388740@Kali>
+ -> X-Mailer: swaks v20240103.0 jetmore.org/john/code/swaks/
+ -> 
+ -> Hello,
+ -> 
+ -> I have forgotten my password and would like to reset it.
+ -> 
+ -> Thanks.
+ -> 
+ -> .
+<-  250 Message accepted for delivery
+ -> QUIT
+<-  221 Bye
+=== Connection closed with remote host.
+=== Trying hopaitech.thm:25...
+=== Connected to hopaitech.thm.
+<-  220 hopaitech.thm ESMTP HopAI Mail Server Ready
+ -> EHLO Kali
+<-  250-hopaitech.thm
+<-  250-SIZE 33554432
+<-  250-8BITMIME
+<-  250 HELP
+ -> MAIL FROM:<abi.thm>
+<-  250 OK
+ -> RCPT TO:<crimson.ears@hopaitech.thm>
+<-  250 OK
+ -> DATA
+<-  354 End data with <CR><LF>.<CR><LF>
+ -> Date: Thu, 02 Jul 2026 14:32:41 +0530
+ -> To: crimson.ears@hopaitech.thm
+ -> From: abi.thm
+ -> Subject: Password Reset Request
+ -> Message-Id: <20260702143241.389004@Kali>
+ -> X-Mailer: swaks v20240103.0 jetmore.org/john/code/swaks/
+ -> 
+ -> Hello,
+ -> 
+ -> I have forgotten my password and would like to reset it.
+ -> 
+ -> Thanks.
+ -> 
+ -> .
+<-  250 Message accepted for delivery
+ -> QUIT
+<-  221 Bye
+=== Connection closed with remote host.
+=== Trying hopaitech.thm:25...
+=== Connected to hopaitech.thm.
+<-  220 hopaitech.thm ESMTP HopAI Mail Server Ready
+ -> EHLO Kali
+<-  250-hopaitech.thm
+<-  250-SIZE 33554432
+<-  250-8BITMIME
+<-  250 HELP
+ -> MAIL FROM:<abi.thm>
+<-  250 OK
+ -> RCPT TO:<violet.thumper@hopaitech.thm>
+<-  250 OK
+ -> DATA
+<-  354 End data with <CR><LF>.<CR><LF>
+ -> Date: Thu, 02 Jul 2026 14:32:51 +0530
+ -> To: violet.thumper@hopaitech.thm
+ -> From: abi.thm
+ -> Subject: Password Reset Request
+ -> Message-Id: <20260702143251.389256@Kali>
+ -> X-Mailer: swaks v20240103.0 jetmore.org/john/code/swaks/
+ -> 
+ -> Hello,
+ -> 
+ -> I have forgotten my password and would like to reset it.
+ -> 
+ -> Thanks.
+ -> 
+ -> .
+<-  250 Message accepted for delivery
+ -> QUIT
+<-  221 Bye
+=== Connection closed with remote host.
+=== Trying hopaitech.thm:25...
+=== Connected to hopaitech.thm.
+<-  220 hopaitech.thm ESMTP HopAI Mail Server Ready
+ -> EHLO Kali
+<-  250-hopaitech.thm
+<-  250-SIZE 33554432
+<-  250-8BITMIME
+<-  250 HELP
+ -> MAIL FROM:<abi.thm>
+<-  250 OK
+ -> RCPT TO:<grim.bounce@hopaitech.thm>
+<-  250 OK
+ -> DATA
+<-  354 End data with <CR><LF>.<CR><LF>
+ -> Date: Thu, 02 Jul 2026 14:32:52 +0530
+ -> To: grim.bounce@hopaitech.thm
+ -> From: abi.thm
+ -> Subject: Password Reset Request
+ -> Message-Id: <20260702143252.389257@Kali>
+ -> X-Mailer: swaks v20240103.0 jetmore.org/john/code/swaks/
+ -> 
+ -> Hello,
+ -> 
+ -> I have forgotten my password and would like to reset it.
+ -> 
+ -> Thanks.
+ -> 
+ -> .
+<-  250 Message accepted for delivery
+ -> QUIT
+<-  221 Bye
+=== Connection closed with remote host.
+=== Trying hopaitech.thm:25...
+=== Connected to hopaitech.thm.
+<-  220 hopaitech.thm ESMTP HopAI Mail Server Ready
+ -> EHLO Kali
+<-  250-hopaitech.thm
+<-  250-SIZE 33554432
+<-  250-8BITMIME
+<-  250 HELP
+ -> MAIL FROM:<abi.thm>
+<-  250 OK
+ -> RCPT TO:<sir.carrotbane@hopaitech.thm>
+<-  250 OK
+ -> DATA
+<-  354 End data with <CR><LF>.<CR><LF>
+ -> Date: Thu, 02 Jul 2026 14:32:52 +0530
+ -> To: sir.carrotbane@hopaitech.thm
+ -> From: abi.thm
+ -> Subject: Password Reset Request
+ -> Message-Id: <20260702143252.389274@Kali>
+ -> X-Mailer: swaks v20240103.0 jetmore.org/john/code/swaks/
+ -> 
+ -> Hello,
+ -> 
+ -> I have forgotten my password and would like to reset it.
+ -> 
+ -> Thanks.
+ -> 
+ -> .
+<-  250 Message accepted for delivery
+ -> QUIT
+<-  221 Bye
+=== Connection closed with remote host.

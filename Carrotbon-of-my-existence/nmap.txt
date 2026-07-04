@@ -1,0 +1,57 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-07-02 12:36 +0530
+Nmap scan report for 10.48.149.253
+Host is up (0.042s latency).
+Not shown: 65531 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 f6:fc:c9:de:0e:68:0e:df:17:c0:8f:23:a0:33:24:57 (ECDSA)
+|_  256 68:ed:6d:cc:e9:4d:bc:31:0d:36:f7:78:ab:fb:69:ac (ED25519)
+25/tcp open  smtp
+|_smtp-commands: hopaitech.thm, SIZE 33554432, 8BITMIME, HELP
+| fingerprint-strings: 
+|   GenericLines: 
+|     220 hopaitech.thm ESMTP HopAI Mail Server Ready
+|     Error: bad syntax
+|     Error: bad syntax
+|   GetRequest: 
+|     220 hopaitech.thm ESMTP HopAI Mail Server Ready
+|     Error: command "GET" not recognized
+|     Error: bad syntax
+|   Hello: 
+|     220 hopaitech.thm ESMTP HopAI Mail Server Ready
+|     Syntax: EHLO hostname
+|   Help: 
+|     220 hopaitech.thm ESMTP HopAI Mail Server Ready
+|     Supported commands: AUTH HELP NOOP QUIT RSET VRFY
+|   NULL: 
+|_    220 hopaitech.thm ESMTP HopAI Mail Server Ready
+53/tcp open  domain  (generic dns response: NXDOMAIN)
+| fingerprint-strings: 
+|   DNSVersionBindReqTCP: 
+|     version
+|_    bind
+80/tcp open  http    Werkzeug httpd 3.1.4 (Python 3.11.14)
+|_http-server-header: Werkzeug/3.1.4 Python/3.11.14
+|_http-title: HopAI Technologies - Home
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port25-TCP:V=7.99%I=7%D=7/2%Time=6A460E20%P=x86_64-pc-linux-gnu%r(NULL,
+SF:31,"220\x20hopaitech\.thm\x20ESMTP\x20HopAI\x20Mail\x20Server\x20Ready\
+SF:r\n")%r(Hello,4C,"220\x20hopaitech\.thm\x20ESMTP\x20HopAI\x20Mail\x20Se
+SF:rver\x20Ready\r\n501\x20Syntax:\x20EHLO\x20hostname\r\n")%r(Help,68,"22
+SF:0\x20hopaitech\.thm\x20ESMTP\x20HopAI\x20Mail\x20Server\x20Ready\r\n250
+SF:\x20Supported\x20commands:\x20AUTH\x20HELP\x20NOOP\x20QUIT\x20RSET\x20V
+SF:RFY\r\n")%r(GenericLines,5F,"220\x20hopaitech\.thm\x20ESMTP\x20HopAI\x2
+SF:0Mail\x20Server\x20Ready\r\n500\x20Error:\x20bad\x20syntax\r\n500\x20Er
+SF:ror:\x20bad\x20syntax\r\n")%r(GetRequest,71,"220\x20hopaitech\.thm\x20E
+SF:SMTP\x20HopAI\x20Mail\x20Server\x20Ready\r\n500\x20Error:\x20command\x2
+SF:0\"GET\"\x20not\x20recognized\r\n500\x20Error:\x20bad\x20syntax\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port53-TCP:V=7.99%I=7%D=7/2%Time=6A460E20%P=x86_64-pc-linux-gnu%r(DNSVe
+SF:rsionBindReqTCP,20,"\0\x1e\0\x06\x81\x03\0\x01\0\0\0\0\0\0\x07version\x
+SF:04bind\0\0\x10\0\x03");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 51.33 seconds
