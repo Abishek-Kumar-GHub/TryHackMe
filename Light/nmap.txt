@@ -1,0 +1,57 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-07-11 13:44 +0530
+Stats: 0:00:47 elapsed; 0 hosts completed (1 up), 1 undergoing Service Scan
+Service scan Timing: About 50.00% done; ETC: 13:45 (0:00:21 remaining)
+Nmap scan report for 10.49.140.243
+Host is up (0.037s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 d5:c4:37:ad:32:97:24:9f:86:57:68:42:13:24:cc:a6 (RSA)
+|   256 fa:e0:a9:73:39:f6:5e:c5:fd:b8:f9:67:a5:bc:16:bb (ECDSA)
+|_  256 3a:e9:56:dd:f9:fd:bc:e3:03:51:5e:c8:e2:38:92:d5 (ED25519)
+1337/tcp open  waste?
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, Kerberos, NULL, RPCCheck, SMBProgNeg, SSLSessionReq, TLSSessionReq, TerminalServerCookie, X11Probe: 
+|     Welcome to the Light database!
+|     Please enter your username:
+|   FourOhFourRequest, GenericLines, GetRequest, HTTPOptions, Help, RTSPRequest: 
+|     Welcome to the Light database!
+|     Please enter your username: Username not found.
+|_    Please enter your username:
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port1337-TCP:V=7.99%I=7%D=7/11%Time=6A51FB83%P=x86_64-pc-linux-gnu%r(NU
+SF:LL,3B,"Welcome\x20to\x20the\x20Light\x20database!\nPlease\x20enter\x20y
+SF:our\x20username:\x20")%r(GenericLines,6B,"Welcome\x20to\x20the\x20Light
+SF:\x20database!\nPlease\x20enter\x20your\x20username:\x20Username\x20not\
+SF:x20found\.\nPlease\x20enter\x20your\x20username:\x20")%r(GetRequest,6B,
+SF:"Welcome\x20to\x20the\x20Light\x20database!\nPlease\x20enter\x20your\x2
+SF:0username:\x20Username\x20not\x20found\.\nPlease\x20enter\x20your\x20us
+SF:ername:\x20")%r(HTTPOptions,6B,"Welcome\x20to\x20the\x20Light\x20databa
+SF:se!\nPlease\x20enter\x20your\x20username:\x20Username\x20not\x20found\.
+SF:\nPlease\x20enter\x20your\x20username:\x20")%r(RTSPRequest,6B,"Welcome\
+SF:x20to\x20the\x20Light\x20database!\nPlease\x20enter\x20your\x20username
+SF::\x20Username\x20not\x20found\.\nPlease\x20enter\x20your\x20username:\x
+SF:20")%r(RPCCheck,3B,"Welcome\x20to\x20the\x20Light\x20database!\nPlease\
+SF:x20enter\x20your\x20username:\x20")%r(DNSVersionBindReqTCP,3B,"Welcome\
+SF:x20to\x20the\x20Light\x20database!\nPlease\x20enter\x20your\x20username
+SF::\x20")%r(DNSStatusRequestTCP,3B,"Welcome\x20to\x20the\x20Light\x20data
+SF:base!\nPlease\x20enter\x20your\x20username:\x20")%r(Help,6B,"Welcome\x2
+SF:0to\x20the\x20Light\x20database!\nPlease\x20enter\x20your\x20username:\
+SF:x20Username\x20not\x20found\.\nPlease\x20enter\x20your\x20username:\x20
+SF:")%r(SSLSessionReq,3B,"Welcome\x20to\x20the\x20Light\x20database!\nPlea
+SF:se\x20enter\x20your\x20username:\x20")%r(TerminalServerCookie,3B,"Welco
+SF:me\x20to\x20the\x20Light\x20database!\nPlease\x20enter\x20your\x20usern
+SF:ame:\x20")%r(TLSSessionReq,3B,"Welcome\x20to\x20the\x20Light\x20databas
+SF:e!\nPlease\x20enter\x20your\x20username:\x20")%r(Kerberos,3B,"Welcome\x
+SF:20to\x20the\x20Light\x20database!\nPlease\x20enter\x20your\x20username:
+SF:\x20")%r(SMBProgNeg,3B,"Welcome\x20to\x20the\x20Light\x20database!\nPle
+SF:ase\x20enter\x20your\x20username:\x20")%r(X11Probe,3B,"Welcome\x20to\x2
+SF:0the\x20Light\x20database!\nPlease\x20enter\x20your\x20username:\x20")%
+SF:r(FourOhFourRequest,6B,"Welcome\x20to\x20the\x20Light\x20database!\nPle
+SF:ase\x20enter\x20your\x20username:\x20Username\x20not\x20found\.\nPlease
+SF:\x20enter\x20your\x20username:\x20");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 180.31 seconds

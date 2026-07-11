@@ -1,0 +1,4 @@
+# Dirsearch started Sat Jul 11 10:30:56 2026 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://robots.thm/harm/to/self/ -w /usr/share/seclists/Discovery/Web-Content/common.txt
+
+200   252B   http://robots.thm/harm/to/self/admin.php
+301   319B   http://robots.thm/harm/to/self/css    -> REDIRECTS TO: http://robots.thm/harm/to/self/css/

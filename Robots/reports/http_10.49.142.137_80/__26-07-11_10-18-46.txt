@@ -1,0 +1,6 @@
+# Dirsearch started Sat Jul 11 10:19:02 2026 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.49.142.137:80/ -w /usr/share/seclists/Discovery/Web-Content/common.txt
+
+301   313B   http://10.49.142.137/harm    -> REDIRECTS TO: http://10.49.142.137/harm/
+301   316B   http://10.49.142.137/harming    -> REDIRECTS TO: http://10.49.142.137/harming/
+301   317B   http://10.49.142.137/ignoring    -> REDIRECTS TO: http://10.49.142.137/ignoring/
+200    74B   http://10.49.142.137/robots.txt
