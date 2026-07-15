@@ -1,0 +1,16 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-07-14 12:15 +0530
+Nmap scan report for 10.49.179.122
+Host is up (0.038s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.9p1 (protocol 2.0)
+80/tcp open  http    Apache httpd 2.4.59 ((Debian))
+|_http-title: Your page title here :)
+|_http-server-header: Apache/2.4.59 (Debian)
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 27.09 seconds
