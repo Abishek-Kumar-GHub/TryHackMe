@@ -1,0 +1,3 @@
+┌──(sonar㉿Kali)-[/run/…/CyberAI/Knowledge/TryHackMe/The-Sticker-Shop]
+└─$ echo "VEhNezgzNzg5YTY5MDc0ZjYzNmY2NGEzODg3OWNmY2FiZThiNjIzMDVlZTZ9" | base64 -d
+THM{83789a69074f636f64a38879cfcabe8b62305ee6} 
