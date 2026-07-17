@@ -1,0 +1,8 @@
+# Dirsearch started Fri Jul 17 10:46:12 2026 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://mountaineer.thm/wordpress/ -w /usr/share/seclists/Discovery/Web-Content/common.txt
+
+301   178B   http://mountaineer.thm/wordpress/images    -> REDIRECTS TO: http://mountaineer.thm/wordpress/images/
+301     0B   http://mountaineer.thm/wordpress/index.php    -> REDIRECTS TO: http://mountaineer.thm/wordpress/
+301   178B   http://mountaineer.thm/wordpress/wp-admin    -> REDIRECTS TO: http://mountaineer.thm/wordpress/wp-admin/
+301   178B   http://mountaineer.thm/wordpress/wp-content    -> REDIRECTS TO: http://mountaineer.thm/wordpress/wp-content/
+301   178B   http://mountaineer.thm/wordpress/wp-includes    -> REDIRECTS TO: http://mountaineer.thm/wordpress/wp-includes/
+405    42B   http://mountaineer.thm/wordpress/xmlrpc.php
