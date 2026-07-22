@@ -1,0 +1,6 @@
+file
+page
+path
+include
+load
+template
