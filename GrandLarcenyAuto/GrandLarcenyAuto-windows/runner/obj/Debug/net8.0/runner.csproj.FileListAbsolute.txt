@@ -1,0 +1,15 @@
+/run/media/sonar/SANDISK/TryHackMe/GrandLarcenyAuto/GrandLarcenyAuto-windows/runner/bin/Debug/net8.0/runner
+/run/media/sonar/SANDISK/TryHackMe/GrandLarcenyAuto/GrandLarcenyAuto-windows/runner/bin/Debug/net8.0/runner.deps.json
+/run/media/sonar/SANDISK/TryHackMe/GrandLarcenyAuto/GrandLarcenyAuto-windows/runner/bin/Debug/net8.0/runner.runtimeconfig.json
+/run/media/sonar/SANDISK/TryHackMe/GrandLarcenyAuto/GrandLarcenyAuto-windows/runner/bin/Debug/net8.0/runner.dll
+/run/media/sonar/SANDISK/TryHackMe/GrandLarcenyAuto/GrandLarcenyAuto-windows/runner/bin/Debug/net8.0/runner.pdb
+/run/media/sonar/SANDISK/TryHackMe/GrandLarcenyAuto/GrandLarcenyAuto-windows/runner/obj/Debug/net8.0/runner.GeneratedMSBuildEditorConfig.editorconfig
+/run/media/sonar/SANDISK/TryHackMe/GrandLarcenyAuto/GrandLarcenyAuto-windows/runner/obj/Debug/net8.0/runner.AssemblyInfoInputs.cache
+/run/media/sonar/SANDISK/TryHackMe/GrandLarcenyAuto/GrandLarcenyAuto-windows/runner/obj/Debug/net8.0/runner.AssemblyInfo.cs
+/run/media/sonar/SANDISK/TryHackMe/GrandLarcenyAuto/GrandLarcenyAuto-windows/runner/obj/Debug/net8.0/runner.csproj.CoreCompileInputs.cache
+/run/media/sonar/SANDISK/TryHackMe/GrandLarcenyAuto/GrandLarcenyAuto-windows/runner/obj/Debug/net8.0/runner.sourcelink.json
+/run/media/sonar/SANDISK/TryHackMe/GrandLarcenyAuto/GrandLarcenyAuto-windows/runner/obj/Debug/net8.0/runner.dll
+/run/media/sonar/SANDISK/TryHackMe/GrandLarcenyAuto/GrandLarcenyAuto-windows/runner/obj/Debug/net8.0/refint/runner.dll
+/run/media/sonar/SANDISK/TryHackMe/GrandLarcenyAuto/GrandLarcenyAuto-windows/runner/obj/Debug/net8.0/runner.pdb
+/run/media/sonar/SANDISK/TryHackMe/GrandLarcenyAuto/GrandLarcenyAuto-windows/runner/obj/Debug/net8.0/runner.genruntimeconfig.cache
+/run/media/sonar/SANDISK/TryHackMe/GrandLarcenyAuto/GrandLarcenyAuto-windows/runner/obj/Debug/net8.0/ref/runner.dll
