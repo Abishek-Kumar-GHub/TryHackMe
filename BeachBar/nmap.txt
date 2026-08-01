@@ -1,0 +1,17 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-08-01 09:45 +0530
+Nmap scan report for 10.48.164.8
+Host is up (0.037s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 9.6p1 Ubuntu 3ubuntu13.18 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 e7:95:c6:d0:87:e3:bd:36:9c:7d:3b:6c:40:c4:9b:ad (ECDSA)
+|_  256 ae:17:06:c6:b6:b5:77:da:69:ea:f1:12:07:35:e5:b3 (ED25519)
+80/tcp open  http    Gunicorn
+| http-title: Beach Bar // Sign in
+|_Requested resource was /login
+|_http-server-header: gunicorn
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 25.13 seconds

