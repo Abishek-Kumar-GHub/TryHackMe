@@ -1,0 +1,16 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-08-04 10:21 +0530
+Nmap scan report for 10.48.159.132
+Host is up (0.041s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 9.6p1 Ubuntu 3ubuntu13.16 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 8e:a8:13:cc:2f:ed:65:59:7d:51:2c:a5:67:24:75:b5 (ECDSA)
+|_  256 e2:ee:9f:da:5b:5e:d7:64:62:11:90:fd:d4:5f:96:27 (ED25519)
+3000/tcp open  http    Node.js Express framework
+| http-title: Ponzi Portfolio \xE2\x80\x94 Login
+|_Requested resource was /auth/login
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 33.74 seconds

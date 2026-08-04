@@ -1,0 +1,15 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-08-03 10:38 +0530
+Nmap scan report for 10.48.156.221
+Host is up (0.063s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 9.6p1 Ubuntu 3ubuntu13.18 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 01:87:8a:f3:13:1c:ef:44:a0:93:91:44:3f:4e:4a:12 (ECDSA)
+|_  256 90:00:6e:31:4d:c5:77:3d:9e:a3:9e:2f:09:da:b2:9b (ED25519)
+80/tcp open  http    Node.js (Express middleware)
+|_http-title: Byte Lotus &mdash; Poolside
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 29.39 seconds
