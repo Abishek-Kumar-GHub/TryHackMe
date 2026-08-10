@@ -1,0 +1,26 @@
+{
+    "name": "HollowShellSouvenir",
+    "version": "1.0.0",
+    "description": "A souvenir shell pack for The Hollow Shell room.",
+    "metadata": {
+        "author": "Attacker/Tester"
+    },
+    "assets": [
+        {
+            "type": "json",
+            "filename": "shell.json"
+        },
+        {
+            "type": "png",
+            "filename": "icon.png"
+        },
+        {
+            "type": "css",
+            "filename": "style.css"
+        }
+    ],
+    "automationHooks": {
+        "onLoad": "initializeThemeWorker()",
+        "onError": "logShellError('HollowShell')"
+    }
+}

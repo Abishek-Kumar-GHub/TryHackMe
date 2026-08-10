@@ -1,0 +1,17 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-08-06 10:11 +0530
+Nmap scan report for 10.48.150.112
+Host is up (0.040s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 9.6p1 Ubuntu 3ubuntu13.18 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 e5:68:bf:1a:ee:21:31:31:42:1a:66:79:f0:39:5d:8b (ECDSA)
+|_  256 f9:4d:ae:03:16:7e:32:d1:41:72:c3:05:19:50:91:b4 (ED25519)
+5000/tcp open  http    Gunicorn
+| http-title: Byte Lotus \xE2\x80\x94 Room Service
+|_Requested resource was /login
+|_http-server-header: gunicorn
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 31.60 seconds

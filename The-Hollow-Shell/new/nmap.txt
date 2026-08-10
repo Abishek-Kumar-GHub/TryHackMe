@@ -1,0 +1,11 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-08-06 15:36 +0530
+Nmap scan report for 10.49.166.178
+Host is up (0.042s latency).
+Not shown: 41808 closed tcp ports (reset), 23725 filtered tcp ports (no-response)
+PORT     STATE SERVICE    VERSION
+22/tcp   open  tcpwrapped
+|_ssh-hostkey: ERROR: Script execution failed (use -d to debug)
+5000/tcp open  tcpwrapped
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 120.21 seconds
