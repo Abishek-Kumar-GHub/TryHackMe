@@ -1,0 +1,17 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-08-14 11:00 +0530
+Nmap scan report for 10.48.173.5
+Host is up (0.041s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 9.6p1 Ubuntu 3ubuntu13.18 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 58:50:bf:ef:2a:e2:a4:e0:d6:f9:67:f4:6b:bb:e0:99 (ECDSA)
+|_  256 a9:47:6f:ff:9f:6e:63:65:ab:54:f5:a9:c5:83:82:13 (ED25519)
+80/tcp open  http    Apache httpd 2.4.58 ((Ubuntu))
+|_http-generator: WordPress 6.9
+|_http-server-header: Apache/2.4.58 (Ubuntu)
+|_http-title: An incorporation of sorts!
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 44.24 seconds
