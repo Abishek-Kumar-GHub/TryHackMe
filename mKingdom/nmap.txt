@@ -1,0 +1,11 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-08-19 10:07 +0530
+Nmap scan report for 10.48.144.225
+Host is up (0.035s latency).
+Not shown: 65534 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+85/tcp open  http    Apache httpd 2.4.7 ((Ubuntu))
+|_http-server-header: Apache/2.4.7 (Ubuntu)
+|_http-title: 0H N0! PWN3D 4G4IN
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 22.86 seconds

@@ -1,0 +1,16 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-08-17 09:36 +0530
+Nmap scan report for gla2.thm (10.48.129.91)
+Host is up (0.039s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 9.6p1 Ubuntu 3ubuntu13.5 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 85:41:16:00:24:ac:85:eb:9e:75:5c:33:68:53:87:bc (ECDSA)
+|_  256 01:c2:5e:bc:1c:1f:8b:7f:51:04:c7:d8:48:3e:b3:ff (ED25519)
+80/tcp open  http    Microsoft Kestrel httpd
+|_http-title: Site doesn't have a title.
+|_http-server-header: Kestrel
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 23.43 seconds

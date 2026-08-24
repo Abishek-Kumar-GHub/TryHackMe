@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("runner")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8bf533fda318e5d2fee8d749f5300e95fe0a328b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cdcea7b565c585120e5a94a186791901c3c7ca21")]
 [assembly: System.Reflection.AssemblyProductAttribute("runner")]
 [assembly: System.Reflection.AssemblyTitleAttribute("runner")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
