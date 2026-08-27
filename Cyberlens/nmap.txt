@@ -1,0 +1,59 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-08-27 10:55 +0530
+Nmap scan report for cyberlens.thm (10.48.146.178)
+Host is up (0.037s latency).
+Not shown: 65518 closed tcp ports (reset)
+PORT      STATE SERVICE       VERSION
+80/tcp    open  http          Apache httpd 2.4.57 ((Win64))
+|_http-server-header: Apache/2.4.57 (Win64)
+|_http-title: CyberLens: Unveiling the Hidden Matrix
+| http-methods: 
+|_  Potentially risky methods: TRACE
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds?
+3389/tcp  open  ms-wbt-server Microsoft Terminal Services
+| ssl-cert: Subject: commonName=CyberLens
+| Not valid before: 2026-08-26T05:23:45
+|_Not valid after:  2027-02-25T05:23:45
+| rdp-ntlm-info: 
+|   Target_Name: CYBERLENS
+|   NetBIOS_Domain_Name: CYBERLENS
+|   NetBIOS_Computer_Name: CYBERLENS
+|   DNS_Domain_Name: CyberLens
+|   DNS_Computer_Name: CyberLens
+|   Product_Version: 10.0.17763
+|_  System_Time: 2026-08-27T05:26:45+00:00
+|_ssl-date: 2026-08-27T05:26:52+00:00; -1s from scanner time.
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+7680/tcp  open  pando-pub?
+47001/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+49664/tcp open  msrpc         Microsoft Windows RPC
+49665/tcp open  msrpc         Microsoft Windows RPC
+49666/tcp open  msrpc         Microsoft Windows RPC
+49667/tcp open  msrpc         Microsoft Windows RPC
+49669/tcp open  msrpc         Microsoft Windows RPC
+49670/tcp open  msrpc         Microsoft Windows RPC
+49672/tcp open  msrpc         Microsoft Windows RPC
+49678/tcp open  msrpc         Microsoft Windows RPC
+61777/tcp open  http          Jetty 8.y.z-SNAPSHOT
+|_http-title: Welcome to the Apache Tika 1.17 Server
+|_http-cors: HEAD GET
+| http-methods: 
+|_  Potentially risky methods: PUT
+|_http-server-header: Jetty(8.y.z-SNAPSHOT)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2026-08-27T05:26:48
+|_  start_date: N/A
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled but not required
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 85.55 seconds

