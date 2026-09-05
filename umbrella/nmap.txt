@@ -1,0 +1,32 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-09-05 10:01 +0530
+Nmap scan report for 10.49.164.241
+Host is up (0.042s latency).
+Not shown: 65531 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 13:a6:0f:63:a8:b8:0f:d0:99:1f:68:3e:f2:84:33:82 (RSA)
+|   256 d4:a3:de:51:fe:bd:5d:c4:ec:59:5a:aa:79:e3:46:0d (ECDSA)
+|_  256 84:13:f5:c0:90:34:af:d1:e2:f7:c7:09:de:51:8b:27 (ED25519)
+3306/tcp open  mysql   MySQL 5.7.40
+| mysql-info: 
+|   Protocol: 10
+|   Version: 5.7.40
+|   Thread ID: 4
+|   Capabilities flags: 65535
+|   Some Capabilities: SupportsLoadDataLocal, Support41Auth, Speaks41ProtocolOld, SupportsTransactions, IgnoreSigpipes, InteractiveClient, SwitchToSSLAfterHandshake, Speaks41ProtocolNew, LongPassword, FoundRows, IgnoreSpaceBeforeParenthesis, LongColumnFlag, ConnectWithDatabase, DontAllowDatabaseTableColumn, SupportsCompression, ODBCClient, SupportsMultipleResults, SupportsAuthPlugins, SupportsMultipleStatments
+|   Status: Autocommit
+|   Salt: v\x03}OJ\x7F1Q\x1E@\x08\x19tS!BFc\x18;
+|_  Auth Plugin Name: mysql_native_password
+| ssl-cert: Subject: commonName=MySQL_Server_5.7.40_Auto_Generated_Server_Certificate
+| Not valid before: 2022-12-22T10:04:49
+|_Not valid after:  2032-12-19T10:04:49
+|_ssl-date: TLS randomness does not represent time
+5000/tcp open  http    Docker Registry (API: 2.0)
+|_http-title: Site doesn't have a title.
+8080/tcp open  http    Node.js (Express middleware)
+|_http-title: Login
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 37.72 seconds
