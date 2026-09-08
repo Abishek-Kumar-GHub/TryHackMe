@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Asa Delarue // Injectus IX Crew Profile</title>
+<link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+<div class="scanlines"></div>
+<div class="vignette"></div>
+<header class="topbar">
+  <div class="brand">
+    <div class="logo-mark">◈</div>
+    <div class="brand-text">
+      <div class="brand-name">TryHaulMe<span class="brand-tld">.gal</span></div>
+      <div class="brand-sub">Injectus IX Crew Profile</div>
+    </div>
+  </div>
+  <div class="status"><a class="back" href="/">&larr; back to airlock</a></div>
+</header>
+
+<main class="profile-wrap">
+  <section class="card profile-card">
+    <div class="card-head">
+      <h2>// CREW&nbsp;ENTRY</h2>
+      <span class="tag ">
+        CREW
+      </span>
+    </div>
+    <div class="card-body profile-body">
+      <div class="profile-photo">
+        
+        <img src="/static/crew/a.delarue.jpg" alt="Asa Delarue" />
+        
+      </div>
+      <div class="profile-meta">
+        <h3>Asa Delarue</h3>
+        <div class="meta-row"><span class="k">id</span><span class="v mono">a.delarue</span></div>
+        <div class="meta-row"><span class="k">rank</span><span class="v">Astrogator</span></div>
+        <div class="meta-row"><span class="k">station</span><span class="v">EPOCH-1 // Injectus IX</span></div>
+        
+        <p class="muted small" style="margin-top:18px">
+          Biometric template registered with the Injectus IX airlock encoder.
+        </p>
+        
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bottombar">
+  TryHaulMe Logistics &copy; The Long Now &middot;
+  <span class="muted">Operation: Neural Never</span>
+</footer>
+</body>
+</html>

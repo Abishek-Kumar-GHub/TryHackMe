@@ -1,0 +1,19 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-09-08 10:19 +0530
+Warning: 10.48.152.91 giving up on port because retransmission cap hit (10).
+Nmap scan report for 10.48.152.91
+Host is up (0.036s latency).
+Not shown: 57047 closed tcp ports (reset), 8486 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 9.6p1 Ubuntu 3ubuntu13.5 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 b8:10:b9:da:94:e4:cf:09:91:f8:09:d0:b3:73:c4:d7 (ECDSA)
+|_  256 a5:8b:fa:67:fa:c0:ee:3d:92:5b:32:ae:17:1d:a9:16 (ED25519)
+80/tcp open  http    Gunicorn
+| http-robots.txt: 1 disallowed entry 
+|_/static/archive/
+|_http-server-header: gunicorn
+|_http-title: Injectus IX Airlock // Biometric Portal
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 66.16 seconds

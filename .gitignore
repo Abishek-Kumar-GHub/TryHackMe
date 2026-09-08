@@ -1,1 +1,5 @@
 Do-Not-Disturb/hydra.restore
+
+# Python virtual environments
+venv/
+.venv/

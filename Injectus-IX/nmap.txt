@@ -1,0 +1,16 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-09-08 09:51 +0530
+Nmap scan report for 10.48.158.122
+Host is up (0.038s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.10 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 73:a6:0c:ce:66:0a:1c:5f:69:61:a7:17:8a:cc:48:16 (ECDSA)
+|_  256 90:13:a7:7f:c4:bf:45:99:ea:95:0f:7f:69:0f:da:d7 (ED25519)
+80/tcp open  http    Werkzeug httpd 3.1.8 (Python 3.10.12)
+|_http-title: Token Jail
+|_http-server-header: Werkzeug/3.1.8 Python/3.10.12
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 21.07 seconds
