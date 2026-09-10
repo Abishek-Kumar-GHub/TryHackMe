@@ -1,0 +1,17 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-09-10 09:45 +0530
+Nmap scan report for 10.49.151.59
+Host is up (0.043s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 04:17:00:a5:6b:c4:ca:1d:3f:c5:a7:59:be:de:90:4b (RSA)
+|   256 db:bb:62:e1:e1:aa:46:66:ab:0a:15:98:33:23:47:21 (ECDSA)
+|_  256 1d:d8:d5:2f:1a:ef:17:7c:74:31:56:98:c6:65:ee:1c (ED25519)
+8000/tcp open  http    Werkzeug httpd 3.0.0 (Python 3.8.10)
+|_http-server-header: Werkzeug/3.0.0 Python/3.8.10
+|_http-title: The BFG
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 22.87 seconds
