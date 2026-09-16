@@ -1,0 +1,4 @@
+To all employees, this is "admin" speaking,
+i came up with a safe list of passwords that you all can use on the site, these passwords don't appear on any wordlist i tested so far, so i encourage you to use them, even me i'm using one of those.
+
+NOTE To rick : good job on limiting login attempts, it works like a charm, this will prevent any future brute forcing.
