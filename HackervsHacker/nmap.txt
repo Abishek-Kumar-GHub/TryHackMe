@@ -1,0 +1,9 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-09-17 10:37 +0530
+Warning: 10.48.164.238 giving up on port because retransmission cap hit (10).
+Nmap scan report for 10.48.164.238
+Host is up (0.039s latency).
+All 65535 scanned ports on 10.48.164.238 are in ignored states.
+Not shown: 55494 closed tcp ports (reset), 10041 filtered tcp ports (no-response)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 81.99 seconds
