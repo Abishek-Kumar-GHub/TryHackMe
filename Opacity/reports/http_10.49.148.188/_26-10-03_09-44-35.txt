@@ -1,0 +1,25 @@
+# Dirsearch started Sat Oct  3 09:44:59 2026 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://10.49.148.188
+
+403   278B   http://10.49.148.188/.ht_wsr.txt
+403   278B   http://10.49.148.188/.htaccess.bak1
+403   278B   http://10.49.148.188/.htaccess.orig
+403   278B   http://10.49.148.188/.htaccess.save
+403   278B   http://10.49.148.188/.htaccess_orig
+403   278B   http://10.49.148.188/.htaccessBAK
+403   278B   http://10.49.148.188/.htaccess.sample
+403   278B   http://10.49.148.188/.htaccess_sc
+403   278B   http://10.49.148.188/.htaccess_extra
+403   278B   http://10.49.148.188/.htaccessOLD
+403   278B   http://10.49.148.188/.htaccessOLD2
+403   278B   http://10.49.148.188/.htm
+403   278B   http://10.49.148.188/.html
+403   278B   http://10.49.148.188/.htpasswds
+403   278B   http://10.49.148.188/.htpasswd_test
+403   278B   http://10.49.148.188/.httr-oauth
+403   278B   http://10.49.148.188/.php
+301   314B   http://10.49.148.188/cloud    -> REDIRECTS TO: http://10.49.148.188/cloud/
+200   393B   http://10.49.148.188/cloud/
+301   312B   http://10.49.148.188/css    -> REDIRECTS TO: http://10.49.148.188/css/
+200   381B   http://10.49.148.188/login.php
+403   278B   http://10.49.148.188/server-status
+403   278B   http://10.49.148.188/server-status/

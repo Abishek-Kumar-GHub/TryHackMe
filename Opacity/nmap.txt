@@ -1,0 +1,33 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-10-03 09:38 +0530
+Nmap scan report for 10.49.148.188
+Host is up (0.035s latency).
+Not shown: 65532 closed tcp ports (reset)
+PORT    STATE SERVICE     VERSION
+22/tcp  open  ssh         OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 4c:17:80:f2:4e:84:d3:0b:75:fd:67:a3:51:c0:7b:17 (RSA)
+|   256 93:36:54:5c:1e:eb:7c:79:c8:eb:39:e2:70:eb:bd:17 (ECDSA)
+|_  256 06:d6:f7:fc:af:0e:15:29:9d:5c:e5:a5:40:06:bb:ed (ED25519)
+80/tcp  open  http        Apache httpd 2.4.41 ((Ubuntu))
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+| http-title: Login
+|_Requested resource was login.php
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+445/tcp open  netbios-ssn Samba smbd 4
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+| smb2-time: 
+|   date: 2026-10-03T04:08:29
+|_  start_date: N/A
+|_clock-skew: -1s
+|_nbstat: NetBIOS name: , NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled but not required
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 22.92 seconds
